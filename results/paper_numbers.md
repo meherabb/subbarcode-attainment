@@ -1,0 +1,212 @@
+# Numbers for the paper (profile FULL, configuration 8f4b785c7a4a)
+
+## Paper Section 7 and Appendix D: setup and environment
+- session_minutes: 71.7
+- logical_cpus: 4
+- ram_gb: 33.66
+- cpu: "x86_64"
+- python: "3.13.16"
+- numpy: "2.1.3"
+- scipy: "1.16.3"
+- pandas: "2.3.3"
+- numba: "0.61.2"
+- matplotlib: "3.10.0"
+- config_hash: "8f4b785c7a4a"
+- seed: 20260925
+- profile: "FULL"
+- unit_tests_passed: 33
+- unit_tests: 33
+
+## Exact decisions (independent enumeration)
+- instances: 60
+- order_mismatches: 0
+- decision_mismatches: 0
+
+## Degree 0 (Theorem 5, Lemma 2, tau = 0 identities)
+- boxes: 100000
+- in_box: 100000
+- barcode_equal: 100000
+- max_vertices: 225
+- persistence_regions: 3000
+- persistence_regions_equal: 3000
+- quadrants: 4000
+- quadrants_equal: 4000
+- gkls_matches: 500
+- gkls_instances: 500
+- gst14: "mismatches=0/1000"
+
+## Table 2 (census)
+- cls: "planar surfaces"
+- instances: 1502
+- max_vertices: 9
+- not_attained: 0
+- count_gaps: 0
+- undecided: 0
+
+- cls: "non-planar surfaces"
+- instances: 2469
+- max_vertices: 9
+- not_attained: 48
+- count_gaps: 0
+- undecided: 0
+
+- cls: "2-complexes with a KC vertex"
+- instances: 1990
+- max_vertices: 8
+- not_attained: 559
+- count_gaps: 9
+- undecided: 0
+
+- cls: "links cycles or paths, not a surface"
+- instances: 51
+- max_vertices: 8
+- not_attained: 0
+- count_gaps: 0
+- undecided: 0
+
+- cls: "non-manifold edge, no KC vertex"
+- instances: 588
+- max_vertices: 8
+- not_attained: 0
+- count_gaps: 0
+- undecided: 0
+
+- cls: "pinched spheres (KC pinch vertex)"
+- instances: 200
+- max_vertices: 24
+- not_attained: 105
+- count_gaps: 0
+- undecided: 0
+
+
+## Degree 1, census text
+- non_planar_failures: {"Moebius band": "7 of 400", "projective plane": "3 of 400", "punctured Klein bottle": "16 of 400", "punctured torus": "22 of 400"}
+- unpinched_controls_attained: "199 of 199"
+- undecided: 0
+- method_instances: 6800
+- method_witness_fD: 5437
+- method_witness_fU: 54
+- method_exhaustive_attained: 502
+- method_exhaustive_not_attained: 607
+- method_sweep_attained: 95
+- method_sweep_not_attained: 105
+- method_witness: 5491
+- method_exhaustive: 1109
+- method_sweep: 200
+- method_reconciles: true
+
+## Certificates and transfers (Theorem 11, Examples 17-20)
+- A: {"image": "[2,5) [7,inf)", "attained": false, "order_types": 1, "count_gap_taus": [], "locally_minimal": true, "kc": [0]}
+- B: {"image": "[2,5) [7,10)", "attained": false, "order_types": 1, "count_gap_taus": [3.0, 3.25, 3.5, 3.99], "locally_minimal": true, "kc": [0]}
+- C: {"image": "[2,3) [4,inf)", "attained": false, "order_types": 6, "count_gap_taus": [], "locally_minimal": true, "kc": []}
+- D: {"image": "[0,2) [3,inf)", "attained": false, "order_types": 13, "count_gap_taus": [], "locally_minimal": true, "kc": []}
+- E: {"image": "[1,inf) [2,4) [5,inf)", "attained": false, "order_types": 13, "count_gap_taus": [], "locally_minimal": true, "kc": []}
+- F: {"image": "[4,6) [8,11)", "attained": false, "order_types": 6, "count_gap_taus": [3.0, 3.25], "locally_minimal": null, "kc": []}
+- transfers: {"RP^2 (D + cone)": {"attained": false, "order_types": 13}, "torus (E + cone)": {"attained": false, "order_types": 13}, "Klein bottle (D + Moebius band)": {"attained": false, "order_types": 13}, "genus 2 (E + punctured torus)": {"attained": false, "order_types": 13}, "non-orientable genus 3 (D + punctured torus)": {"attained": false, "order_types": 13}}
+
+## Example 20
+- kc_vertices: []
+- max_edge_degree: 5
+- image_barcode: "[4,6) [8,11)"
+- matches_prediction: true
+- order_types: 6
+- complete: true
+- min_count_vs_image: {"2.0": [1, 1], "2.5": [1, 1], "3.0": [1, 0], "3.25": [1, 0], "3.49": [1, 0], "3.5": [0, 0], "4.0": [0, 0]}
+- count_gap_taus: [3.0, 3.25, 3.49]
+- grid_points: 425
+- grid_min_longest: 3.5
+- grid_argmin: [[7.5, 7.5]]
+- bound_holds_on_grid: true
+- barcode_attained: false
+
+## Theorem 8 (planar)
+- boxes: 1500
+- families: 5
+- max_vertices: 26
+- failures: 0
+- fD_on_complex_itself: {"annulus": 93.0, "disk": 100.0, "full subcomplex of a sphere": 82.7, "sphere": 100.0, "sphere with 3 holes": 81.7}
+
+## Theorem 10 and Corollary 14 (surfaces)
+- boxes: 7199
+- families: 18
+- max_vertices: 16
+- max_bhat: 4
+- failures: 0
+- fast_mismatches: 0
+- essential_births_differ: 333
+- planar_barcode_failures: 0
+- max_mismatch: 3
+
+## Theorem 13 and Lemma 12
+- boundary_fD_attains: {"mobius (seed 11)": "393 of 400", "ptorus (seed 21)": "193 of 200"}
+- boundary_proved_unattainable: 14
+- closed_fD_attains: 411
+- closed_boxes: 500
+- closed_attained_by_fp: 89
+- boundary_max_boxes: 210
+- boundary_near_sup_representatives: 4030
+- closed_max_boxes: 210
+- closed_near_sup_representatives: 6246
+- closed_above_Lstar: 5130
+- reference_matches: "8 of 8"
+- inconsistent_runs: 0
+- extended_boxes: 15200
+- extended_inconsistent: 0
+
+## Proposition 15 and Lemma 16
+- graphs: 600
+- graph_failures: 0
+- kc_functions: 6000
+- kc_complexes: 1500
+- kc_entrances_doing_both: 283
+- kc_violations: 0
+
+## Middle degrees (new theorem)
+- cases: 7
+- spheres_and_ball_ok: true
+- barcode_not_attained_all: true
+- count_gaps_all: true
+- lifts_consistent: true
+- moebius_s3_vertices: 24
+- moebius_s3_order_types: 13
+- ex18_s3_vertices: 31
+- ex18_min_longest_bar: 4.0
+- seconds: 0.6
+- rows: [{"case": "Moebius band (Thm 11) in S^3", "d": 3, "k": 1, "vertices": 24, "facets": 72, "betti": "[1, 0, 0, 1]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Moebius band (Thm 11) in B^3", "d": 3, "k": 1, "vertices": 23, "facets": 66, "betti": "[1, 0, 0, 0]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Example 18 in S^3 (counts)", "d": 3, "k": 1, "vertices": 31, "facets": 112, "betti": "[1, 0, 0, 1]", "image_barcode": "[2,5) [7,10)", "order_types": 1, "count_gap_taus": "[3.0, 3.5, 3.99]"}, {"case": "Moebius band, suspended", "d": 4, "k": 2, "vertices": 26, "facets": 144, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Example 18, suspended (counts)", "d": 4, "k": 2, "vertices": 33, "facets": 224, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[2,5) [7,10)", "order_types": 1, "count_gap_taus": "[3.0, 3.5, 3.99]"}, {"case": "Moebius band, joined with S^0", "d": 4, "k": 1, "vertices": 26, "facets": 144, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Example 18, joined with S^0 (counts)", "d": 4, "k": 1, "vertices": 33, "facets": 224, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[2,5) [7,10)", "order_types": 1, "count_gap_taus": "[3.0, 3.5, 3.99]"}]
+
+## 3-D grids (Theorem 8 with d = 3; degree-1 census)
+- degree2: {"boxes": 500, "shapes": 5, "theorem_failures": 0, "not_in_box": 0, "ball_own_fD_failures": 0, "padding_lemma_failures": 0, "boxes_with_image_bars": 216}
+- degree1: {"boxes": 2000, "not_attained": 0, "undecided": 0, "witness_failures": 0, "count_gaps": 0, "decided_by_witness": 1890}
+- degree1_by_shape: [{"shape": "2x3x3", "free": 1, "n": 18, "boxes": 200, "by_witness": 200, "by_enumeration": 0, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "2x3x3", "free": 2, "n": 18, "boxes": 200, "by_witness": 197, "by_enumeration": 3, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "2x3x3", "free": 4, "n": 18, "boxes": 200, "by_witness": 192, "by_enumeration": 8, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "2x3x3", "free": 6, "n": 18, "boxes": 200, "by_witness": 179, "by_enumeration": 21, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 1, "n": 27, "boxes": 200, "by_witness": 198, "by_enumeration": 2, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 2, "n": 27, "boxes": 200, "by_witness": 195, "by_enumeration": 5, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 4, "n": 27, "boxes": 200, "by_witness": 186, "by_enumeration": 14, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 6, "n": 27, "boxes": 200, "by_witness": 172, "by_enumeration": 28, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x4", "free": 2, "n": 36, "boxes": 200, "by_witness": 191, "by_enumeration": 9, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x4", "free": 4, "n": 36, "boxes": 200, "by_witness": 180, "by_enumeration": 20, "not_attained": 0, "count_gaps": 0, "undecided": 0}]
+
+## Scaling (Figure 3a,b)
+- sizes: "10,000 to 50,000,000"
+- uf_ops_per_vertex: [3.64, 3.86]
+- ops_loglog_slope: 1.007
+- cert_ns_per_vertex: [202, 974]
+- pers_ns_per_vertex: [153, 650]
+- random_access_ns: [1.3, 11.3]
+- llc_bytes: 40370176
+- array_bytes_per_vertex: 122.0
+- working_set_model_bytes_per_vertex: 162
+- degree1_max_vertices: 2560000
+- degree1_seconds_at_max: {"terrain": 5.2, "torus": 5.1}
+- degree1_exact_grids: 42
+- degree1_exact_agree: 42
+
+## Compression (paper Section 7, Table 3, Appendix D)
+- fields: 11
+- compressions: 132
+- certificate_evaluations: 264
+- sdrbench_evaluations: 120
+- overcount_runs: 107
+- overcount_runs_sdrbench: 72
+- undercount_runs: 36
+- undercount_runs_sdrbench: 17
+- bound_respected: 264
+- valid: 264
+- uniform_baseline: {"absolute_runs": 198, "absolute_identity_holds": 198, "relative_runs": 66, "relative_T_above_uniform": 52, "monotonicity_violations": 0, "relative_mean_T": 530.3636363636364, "relative_mean_T_uniform": 424.8787878787879, "relative_mean_N_true": 619.1818181818181}
+- median_certify_seconds: {"CESM-ATM:CLDLOW_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.683}, "CESM-ATM:FLDSC_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.098}, "CESM-ATM:ODV_sulf_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.344}, "CESM-ATM:TAUX_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.516}, "Hurricane-ISABEL-Pf:Pf05.f32": {"n": 25000000, "median_certify_seconds": 10.82}, "synthetic-2D-0": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-2D-1": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-2D-2": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-2D-3": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-3D-0": {"n": 442368, "median_certify_seconds": 0.132}, "synthetic-3D-1": {"n": 442368, "median_certify_seconds": 0.132}}
+- fill_fractions: {"CESM-ATM:CLDLOW_1_1800_3600.f32": 0.0, "CESM-ATM:FLDSC_1_1800_3600.f32": 0.0, "CESM-ATM:ODV_sulf_1_1800_3600.f32": 0.09862515432098766, "CESM-ATM:TAUX_1_1800_3600.f32": 0.0, "Hurricane-ISABEL-Pf:Pf05.f32": 0.0}
+- figure_3c: {"sdr_mean_true_bars": 2055.8, "certified_fraction": {"SZ@0.0001": 0.9694, "SZ@0.001": 0.7489, "SZ@0.01": 0.2151, "SZ3@0.0001": 0.9701, "SZ3@0.001": 0.7512, "SZ3@0.01": 0.2025, "SZ3-pwrel@0.0001": 0.9911, "SZ3-pwrel@0.001": 0.9245, "SZ3-pwrel@0.01": 0.595, "ZFP@0.0001": 0.9698, "ZFP@0.001": 0.7321, "ZFP@0.01": 0.1767}, "naive_excess": {"SZ@0.0001": 3.6, "SZ@0.001": 55.0, "SZ@0.01": 6345.8, "SZ3@0.0001": 1.6, "SZ3@0.001": 62.8, "SZ3@0.01": 2107.4, "SZ3-pwrel@0.0001": -2.6, "SZ3-pwrel@0.001": 11.0, "SZ3-pwrel@0.01": 915.4, "ZFP@0.0001": -0.4, "ZFP@0.001": 3.4, "ZFP@0.01": 52.8}}
+- sdrbench_executed: ["CESM-ATM", "Hurricane-ISABEL-Pf"]

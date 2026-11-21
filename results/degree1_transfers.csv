@@ -1,0 +1,6 @@
+surface,nv,ntri,betti,chi,closed_surface,orientable,I1,n_orders,complete,attained
+RP^2 (D + cone),7,12,"(1, 1, 1)",1,True,False,"[0,2) [3,inf)",13,True,False
+torus (E + cone),8,16,"(1, 2, 1)",0,True,True,"[1,inf) [2,4) [5,inf)",13,True,False
+Klein bottle (D + Moebius band),9,18,"(1, 2, 1)",0,True,False,"[0,2) [3,inf) [7,inf)",13,True,False
+genus 2 (E + punctured torus),11,26,"(1, 4, 1)",-2,True,True,"[1,inf) [2,4) [5,inf) [10,inf) [10,inf)",13,True,False
+non-orientable genus 3 (D + punctured torus),10,22,"(1, 3, 1)",-1,True,False,"[0,2) [3,inf) [7,inf) [7,inf)",13,True,False

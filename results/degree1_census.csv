@@ -1,0 +1,16 @@
+design,cls,instances,max_vertices,proved_not_attained,undecided,witness_failed,count_gaps,share_not_attained
+sphere,planar surface,400,8,0,0,0,0,0.0
+disk,planar surface,400,8,0,0,0,0,0.0
+annulus,planar surface,400,9,0,0,0,0,0.0
+projective plane,non-planar surface,400,7,3,0,0,0,0.0075
+torus,non-planar surface,400,9,0,0,0,0,0.0
+Klein bottle,non-planar surface,400,9,0,0,0,0,0.0
+Moebius band,non-planar surface,400,9,7,0,0,0,0.0175
+punctured torus,non-planar surface,400,7,22,0,0,0,0.055
+punctured Klein bottle,non-planar surface,400,9,16,0,0,0,0.04
+random,KC vertex,1990,8,559,0,0,9,0.2809045226130653
+random,"cycle-or-paths links, not a surface",51,8,0,0,0,0,0.0
+random,"non-manifold edge, no KC",588,8,0,0,0,0,0.0
+random,non-planar surface,69,8,0,0,0,0,0.0
+random,planar surface,302,8,0,0,0,0,0.0
+pinched sphere,pinched sphere (KC pinch vertex),200,24,105,0,0,0,0.525

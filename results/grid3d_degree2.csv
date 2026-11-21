@@ -1,0 +1,6 @@
+shape,n,boxes,mean_image_bars,in_box,sphere_fD_attains,ball_restricted_fD_attains,ball_own_fD_attains
+3x3x3,27,100,0.21,100,100,100,100
+3x3x4,36,100,0.4,100,100,100,100
+4x4x4,64,100,0.5,100,100,100,100
+4x4x5,80,100,0.6,100,100,100,100
+5x5x5,125,100,0.72,100,100,100,100

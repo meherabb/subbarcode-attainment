@@ -1,0 +1,19 @@
+family,instances,max_vertices,bhat,closed,in_box,finite_equal,essential_count_equal,max_mismatch,counts_equal,fast_equal_exact,barcode_attained_by_fD
+RP^2 (7 vertices),400,7,1,True,1.0,1.0,1.0,1,1.0,1.0,0.93
+torus 3x3,400,9,2,True,1.0,1.0,1.0,2,1.0,1.0,0.915
+torus 4x4,400,16,2,True,1.0,1.0,1.0,2,1.0,1.0,0.9825
+torus 3x5,400,15,2,True,1.0,1.0,1.0,2,1.0,1.0,0.94
+Klein bottle 3x3,400,9,2,True,1.0,1.0,1.0,2,1.0,1.0,0.905
+Klein bottle 4x4,400,16,2,True,1.0,1.0,1.0,2,1.0,1.0,0.9675
+Klein bottle (D+D),400,9,2,True,1.0,1.0,1.0,2,1.0,1.0,0.8775
+genus 2 (E+E),400,11,4,True,1.0,1.0,1.0,3,1.0,1.0,0.835
+N3 (D+E),400,10,3,True,1.0,1.0,1.0,3,1.0,1.0,0.865
+Moebius band (6 v.),400,6,1,False,1.0,1.0,1.0,1,1.0,1.0,0.9925
+Moebius band (grid),400,9,1,False,1.0,1.0,1.0,1,1.0,1.0,0.9925
+punctured torus (7 v.),400,7,2,False,1.0,1.0,1.0,1,1.0,1.0,0.9925
+punctured torus 4x4,400,16,2,False,1.0,1.0,1.0,1,1.0,1.0,0.9875
+punctured Klein bottle,400,9,2,False,1.0,1.0,1.0,1,1.0,1.0,0.9875
+torus with two holes,400,16,2,False,1.0,1.0,1.0,1,1.0,1.0,0.9975
+disk,400,12,0,False,1.0,1.0,1.0,0,1.0,1.0,1.0
+annulus,399,12,0,False,1.0,1.0,1.0,0,1.0,1.0,1.0
+sphere,400,12,0,True,1.0,1.0,1.0,0,1.0,1.0,1.0

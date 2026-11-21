@@ -1,0 +1,335 @@
+{
+  "profile": "FULL",
+  "seed": 20260925,
+  "dtype": "float64",
+  "p2_slope_range": [
+    0.95,
+    1.15
+  ],
+  "p2_slope_falsify": 1.2,
+  "compression": {
+    "sdrbench": [
+      {
+        "name": "CESM-ATM",
+        "shape": [
+          1800,
+          3600
+        ],
+        "n_fields": 4,
+        "url": "https://g-d0cd3f.fd635.8443.data.globus.org/raw-data/CESM-ATM/SDRBENCH-CESM-ATM-1800x3600.tar.gz"
+      },
+      {
+        "name": "Hurricane-ISABEL-Pf",
+        "shape": [
+          100,
+          500,
+          500
+        ],
+        "n_fields": 1,
+        "url": "https://g-d0cd3f.fd635.8443.data.globus.org/raw-data/Hurricane-ISABEL/SDRBENCH-Hurricane-ISABEL-Pf.tar.gz"
+      }
+    ],
+    "methods": [
+      "SZ3",
+      "ZFP",
+      "SZ",
+      "SZ3-pwrel"
+    ],
+    "tau_fracs": [
+      0.005,
+      0.02
+    ],
+    "conn2d": 6,
+    "conn3d": 6,
+    "max_download_gb": 3.0
+  },
+  "gkls_instances": 500,
+  "opt_instances": 100000,
+  "opt_brute_instances": 1000,
+  "d1x_selfcheck": 400,
+  "d1x_indep": 60,
+  "d1x_lemma_complexes": 1500,
+  "d1x_planar": 300,
+  "d1x_census": 3000,
+  "d1x_small_surfaces": 400,
+  "d1x_pinched": 200,
+  "d1x_order_cap": 200000,
+  "d1x_thmc": 400,
+  "d1x_graphs": 600,
+  "d1f_corr": 3.0,
+  "d1f_halfwidth": 0.05,
+  "d1f_exact_sides": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "d1f_exact_reps": 3,
+  "d1f_witness_sides": [
+    20,
+    40,
+    60,
+    80,
+    100
+  ],
+  "d1f_sides": [
+    100,
+    200,
+    400,
+    800,
+    1600
+  ],
+  "d1f_reps": 3,
+  "t13_decide": [
+    [
+      "mobius",
+      400,
+      11
+    ],
+    [
+      "rp2",
+      300,
+      12
+    ],
+    [
+      "ptorus",
+      200,
+      21
+    ],
+    [
+      "torus",
+      200,
+      22
+    ]
+  ],
+  "t13_max": [
+    [
+      "mobius",
+      150,
+      32
+    ],
+    [
+      "ptorus",
+      60,
+      31
+    ]
+  ],
+  "t13_max_closed": [
+    [
+      "rp2",
+      150,
+      41
+    ],
+    [
+      "torus",
+      60,
+      42
+    ]
+  ],
+  "t13_extended": [
+    [
+      "decide",
+      "mobius",
+      4000,
+      111
+    ],
+    [
+      "decide",
+      "rp2",
+      3000,
+      112
+    ],
+    [
+      "decide",
+      "ptorus",
+      2000,
+      121
+    ],
+    [
+      "decide",
+      "torus",
+      2000,
+      122
+    ],
+    [
+      "max",
+      "mobius",
+      1500,
+      132
+    ],
+    [
+      "max",
+      "ptorus",
+      600,
+      131
+    ],
+    [
+      "max_closed",
+      "rp2",
+      1500,
+      141
+    ],
+    [
+      "max_closed",
+      "torus",
+      600,
+      142
+    ]
+  ],
+  "g3_dual_shapes": [
+    [
+      3,
+      3,
+      3
+    ],
+    [
+      3,
+      3,
+      4
+    ],
+    [
+      4,
+      4,
+      4
+    ],
+    [
+      4,
+      4,
+      5
+    ],
+    [
+      5,
+      5,
+      5
+    ]
+  ],
+  "g3_dual_boxes": 100,
+  "g3_census_jobs": [
+    [
+      [
+        2,
+        3,
+        3
+      ],
+      1
+    ],
+    [
+      [
+        2,
+        3,
+        3
+      ],
+      2
+    ],
+    [
+      [
+        2,
+        3,
+        3
+      ],
+      4
+    ],
+    [
+      [
+        2,
+        3,
+        3
+      ],
+      6
+    ],
+    [
+      [
+        3,
+        3,
+        3
+      ],
+      1
+    ],
+    [
+      [
+        3,
+        3,
+        3
+      ],
+      2
+    ],
+    [
+      [
+        3,
+        3,
+        3
+      ],
+      4
+    ],
+    [
+      [
+        3,
+        3,
+        3
+      ],
+      6
+    ],
+    [
+      [
+        3,
+        3,
+        4
+      ],
+      2
+    ],
+    [
+      [
+        3,
+        3,
+        4
+      ],
+      4
+    ]
+  ],
+  "g3_census_boxes": 200,
+  "ex20_grid_step": 0.25,
+  "p2_sizes": [
+    10000,
+    30000,
+    100000,
+    300000,
+    1000000,
+    3000000,
+    10000000,
+    20000000,
+    50000000
+  ],
+  "p2_reps": 10,
+  "p2_density_n": 200000,
+  "p2_density_degrees": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "p2_tau_n": 1000000,
+  "p2v2_reps": 5,
+  "p2_mem_reps": 3,
+  "run_compression": true,
+  "comp_synth_2d": 4,
+  "comp_synth_3d": 2,
+  "comp_shape2d": [
+    256,
+    256
+  ],
+  "comp_shape3d": [
+    48,
+    96,
+    96
+  ],
+  "comp_rel_bounds": [
+    0.01,
+    0.001,
+    0.0001
+  ]
+}

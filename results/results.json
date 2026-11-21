@@ -1,0 +1,3532 @@
+{
+  "profile": "FULL",
+  "config_hash": "8f4b785c7a4a",
+  "environment": {
+    "platform": "kaggle",
+    "python": "3.13.16",
+    "os": "Linux 6.18.55+",
+    "cpu": "x86_64",
+    "logical_cpus": 4,
+    "ram_gb": 33.66,
+    "gpu": "Tesla T4, 15360 MiB\nTesla T4, 15360 MiB",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "numba": "0.61.2",
+    "matplotlib": "3.10.0",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1"
+    },
+    "h5py": "3.14.0",
+    "hdf5plugin": "7.1.0"
+  },
+  "status": {
+    "unit_tests": {
+      "status": "EXECUTED",
+      "reason": "33/33 PASS",
+      "profile": "FULL"
+    },
+    "gkls_objective": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "v3_optimality": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "example20": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "degree1_v4": {
+      "status": "EXECUTED",
+      "reason": "machinery SUPPORTED; planar SUPPORTED; certificates SUPPORTED",
+      "profile": "FULL"
+    },
+    "theorem_c": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "prop_g": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "degree1_fast": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "theorem13": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "middle_degrees": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "grid3d": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    },
+    "P2_scaling": {
+      "status": "EXECUTED",
+      "reason": "NOT SUPPORTED (full frozen range)",
+      "profile": "FULL",
+      "skipped_sizes": []
+    },
+    "scaling_v2": {
+      "status": "EXECUTED",
+      "reason": "post hoc; skipped []",
+      "profile": "FULL"
+    },
+    "p2_memory_hierarchy": {
+      "status": "EXECUTED",
+      "reason": "post hoc",
+      "profile": "FULL"
+    },
+    "compression_synthetic": {
+      "status": "EXECUTED",
+      "reason": "4 2-D + 2 3-D fields",
+      "profile": "FULL"
+    },
+    "real_compression": {
+      "status": "EXECUTED",
+      "reason": "SDRBench datasets executed: ['CESM-ATM', 'Hurricane-ISABEL-Pf']",
+      "profile": "FULL"
+    },
+    "compression_uniform_baseline": {
+      "status": "EXECUTED",
+      "reason": "SUPPORTED",
+      "profile": "FULL"
+    }
+  },
+  "unit_tests": [
+    {
+      "test": "T01 persistence known answer",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "T02 Prop.3(b) example: T_1=3, N_1=3, max rank=2",
+      "result": "PASS",
+      "detail": "(3, 3, 2)"
+    },
+    {
+      "test": "T03 staircase: T=K+1, max rank=2 (K=1..8)",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "T04 comb: T_0.5 = 1 (K=2..20)",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "T05 nested forest: T_1 = D+1 (D=1..14)",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "T06 degenerate box: T = N_tau(f)",
+      "result": "PASS",
+      "detail": "mismatches=0/500"
+    },
+    {
+      "test": "T07 symmetric-box identity (B2 = B3)",
+      "result": "PASS",
+      "detail": "mismatches=0/500"
+    },
+    {
+      "test": "T08 GST14 mandatory minima = T_0",
+      "result": "PASS",
+      "detail": "mismatches=0/1000"
+    },
+    {
+      "test": "T09 Cor.2 monotone tau_x",
+      "result": "PASS",
+      "detail": "violations=0/500"
+    },
+    {
+      "test": "T09 Cor.2 interval formula = recomputation",
+      "result": "PASS",
+      "detail": "mismatches=0/500"
+    },
+    {
+      "test": "T10 CSR kernel = grid kernel (T and f*)",
+      "result": "PASS",
+      "detail": "mismatches=0/180"
+    },
+    {
+      "test": "T10b CSR persistence = grid persistence",
+      "result": "PASS",
+      "detail": "mismatches=0/180"
+    },
+    {
+      "test": "T11 numba = exact rational reference (T and f*)",
+      "result": "PASS",
+      "detail": "mismatches=0/200"
+    },
+    {
+      "test": "T12 invariance (shift, scale, relabel)",
+      "result": "PASS",
+      "detail": "violations=0/300"
+    },
+    {
+      "test": "T13 monotonicity (box inclusion, tau)",
+      "result": "PASS",
+      "detail": "violations=0/300"
+    },
+    {
+      "test": "T14 rank certificate sweep = brute force",
+      "result": "PASS",
+      "detail": "mismatches=0/400"
+    },
+    {
+      "test": "T14 rank certificate <= T (Prop.3 direction)",
+      "result": "PASS",
+      "detail": "violations=0/400"
+    },
+    {
+      "test": "T15 priority-flood consistency",
+      "result": "PASS",
+      "detail": "violations=0/100"
+    },
+    {
+      "test": "T16 A1 violation (ell>u) is rejected",
+      "result": "PASS",
+      "detail": ""
+    },
+    {
+      "test": "T17 forced quadrants populated for f in B (Lemma 1 map and matching)",
+      "result": "PASS",
+      "detail": "failures=0/900"
+    },
+    {
+      "test": "T18 post-filter ablation <= T, exact on staircases",
+      "result": "PASS",
+      "detail": "violations=0/308"
+    },
+    {
+      "test": "T19 exact predicate a+b<c = rational arithmetic (near-ties)",
+      "result": "PASS",
+      "detail": "mismatches=0/20000 (rounded test: 3101)"
+    },
+    {
+      "test": "T20 N_0(f) = #minimal plateaus",
+      "result": "PASS",
+      "detail": "mismatches=0/1000"
+    },
+    {
+      "test": "T21 max rank = max_s #minimal(U_s) (forest characterisation)",
+      "result": "PASS",
+      "detail": "mismatches=0/1000"
+    },
+    {
+      "test": "T22 window lemma",
+      "result": "PASS",
+      "detail": "violations=0/1000"
+    },
+    {
+      "test": "T23 N-D grid kernels = CSR (2-D and 3-D)",
+      "result": "PASS",
+      "detail": "mismatches=0"
+    },
+    {
+      "test": "T24 relabelled sweep = original kernel",
+      "result": "PASS",
+      "detail": "mismatches=0/80"
+    },
+    {
+      "test": "T25 #image bars longer than tau = T_tau",
+      "result": "PASS",
+      "detail": "mismatches=0"
+    },
+    {
+      "test": "T26 Bar0(f_U) = image barcode and f_U in the box",
+      "result": "PASS",
+      "detail": "failures=0/600"
+    },
+    {
+      "test": "T27 N_tau(f_U) = T_tau for every tau",
+      "result": "PASS",
+      "detail": "mismatches=0"
+    },
+    {
+      "test": "T28 image barcode is a sub-barcode of every sampled f (reproduced)",
+      "result": "PASS",
+      "detail": "violations=0/1800"
+    },
+    {
+      "test": "T29 greedy sub-barcode matching is maximum",
+      "result": "PASS",
+      "detail": "mismatches=0/2000"
+    },
+    {
+      "test": "T30 wider box gives a sub-barcode (monotonicity)",
+      "result": "PASS",
+      "detail": "violations=0/500"
+    }
+  ],
+  "degree0": {
+    "tau0_identity": {
+      "verdict": "SUPPORTED",
+      "instances": 500,
+      "matches": 500
+    },
+    "optimality": {
+      "verdict": "SUPPORTED",
+      "instances": 100000,
+      "in_box": 100000,
+      "equal": 100000,
+      "all_tau": 100000,
+      "validity_violations": 0,
+      "corner_bad": 0,
+      "elder_share": 0.6291153234286947,
+      "region_checks": 7000,
+      "region_equal": 7000
+    },
+    "subbarcode_validity": "SUPPORTED"
+  },
+  "degree1": {
+    "machinery": {
+      "instances": 400,
+      "deg0_not_attained": 0,
+      "deg0_region_mismatches": 0,
+      "lower_bound_violations": 0,
+      "indep_checked": 60,
+      "indep_order_mismatches": 0,
+      "indep_decision_mismatches": 0
+    },
+    "kc_lemma": {
+      "verdict": "SUPPORTED",
+      "complexes": 1500,
+      "functions": 6000,
+      "kc_free_complexes": 839,
+      "mv_violations": 0,
+      "lemma_violations": 0,
+      "positive_control_events": 283
+    },
+    "planar": {
+      "verdict": "SUPPORTED",
+      "instances": 1500,
+      "theorem_failures": 0,
+      "validity_violations": 0
+    },
+    "census": {
+      "summary": {
+        "instances": 6800,
+        "planar_instances": 1502,
+        "planar_not_attained": 0,
+        "nonplanar_surface_not_attained": 48,
+        "kc_not_attained": 559,
+        "nonmanifold_not_attained": 0,
+        "undecided": 0,
+        "witness_failures": 0,
+        "count_gaps_total": 9,
+        "count_gaps_without_kc": 0,
+        "pinched": 200,
+        "pinched_not_attained": 105,
+        "pinch_kc": 200,
+        "unpinched": 199,
+        "unpinched_not_attained": 0
+      },
+      "methods": {
+        "instances": 6800,
+        "witness_fD": 5437,
+        "witness_fU": 54,
+        "exhaustive_attained": 502,
+        "exhaustive_not_attained": 607,
+        "sweep_attained": 95,
+        "sweep_not_attained": 105,
+        "witness": 5491,
+        "exhaustive": 1109,
+        "sweep": 200,
+        "reconciles": true
+      },
+      "table": [
+        {
+          "design": "sphere",
+          "cls": "planar surface",
+          "instances": 400,
+          "max_vertices": 8,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "disk",
+          "cls": "planar surface",
+          "instances": 400,
+          "max_vertices": 8,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "annulus",
+          "cls": "planar surface",
+          "instances": 400,
+          "max_vertices": 9,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "projective plane",
+          "cls": "non-planar surface",
+          "instances": 400,
+          "max_vertices": 7,
+          "proved_not_attained": 3,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0075
+        },
+        {
+          "design": "torus",
+          "cls": "non-planar surface",
+          "instances": 400,
+          "max_vertices": 9,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "Klein bottle",
+          "cls": "non-planar surface",
+          "instances": 400,
+          "max_vertices": 9,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "Moebius band",
+          "cls": "non-planar surface",
+          "instances": 400,
+          "max_vertices": 9,
+          "proved_not_attained": 7,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0175
+        },
+        {
+          "design": "punctured torus",
+          "cls": "non-planar surface",
+          "instances": 400,
+          "max_vertices": 7,
+          "proved_not_attained": 22,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.055
+        },
+        {
+          "design": "punctured Klein bottle",
+          "cls": "non-planar surface",
+          "instances": 400,
+          "max_vertices": 9,
+          "proved_not_attained": 16,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.04
+        },
+        {
+          "design": "random",
+          "cls": "KC vertex",
+          "instances": 1990,
+          "max_vertices": 8,
+          "proved_not_attained": 559,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 9,
+          "share_not_attained": 0.2809045226130653
+        },
+        {
+          "design": "random",
+          "cls": "cycle-or-paths links, not a surface",
+          "instances": 51,
+          "max_vertices": 8,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "random",
+          "cls": "non-manifold edge, no KC",
+          "instances": 588,
+          "max_vertices": 8,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "random",
+          "cls": "non-planar surface",
+          "instances": 69,
+          "max_vertices": 8,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "random",
+          "cls": "planar surface",
+          "instances": 302,
+          "max_vertices": 8,
+          "proved_not_attained": 0,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.0
+        },
+        {
+          "design": "pinched sphere",
+          "cls": "pinched sphere (KC pinch vertex)",
+          "instances": 200,
+          "max_vertices": 24,
+          "proved_not_attained": 105,
+          "undecided": 0,
+          "witness_failed": 0,
+          "count_gaps": 0,
+          "share_not_attained": 0.525
+        }
+      ]
+    },
+    "certificates": {
+      "A": {
+        "name": "A",
+        "nv": 6,
+        "ntri": 5,
+        "betti": [
+          1,
+          1,
+          0
+        ],
+        "chi": 0,
+        "kc_vertices": [
+          0
+        ],
+        "max_edge_degree": 2,
+        "surface": false,
+        "orientable": null,
+        "planar_surface": null,
+        "free_vertices": [
+          0
+        ],
+        "I1": [
+          [
+            2.0,
+            5.0
+          ],
+          [
+            7.0,
+            null
+          ]
+        ],
+        "predicted": [
+          [
+            2.0,
+            5.0
+          ],
+          [
+            7.0,
+            null
+          ]
+        ],
+        "matches_prediction": true,
+        "n_orders": 1,
+        "complete": true,
+        "attained": false,
+        "pers": {
+          "0.0": [
+            2,
+            2
+          ],
+          "0.5": [
+            2,
+            2
+          ],
+          "1.0": [
+            2,
+            2
+          ],
+          "1.5": [
+            2,
+            2
+          ],
+          "2.0": [
+            2,
+            2
+          ],
+          "2.5": [
+            2,
+            2
+          ],
+          "3.0": [
+            1,
+            1
+          ],
+          "3.25": [
+            1,
+            1
+          ],
+          "3.5": [
+            1,
+            1
+          ],
+          "3.99": [
+            1,
+            1
+          ],
+          "4.0": [
+            1,
+            1
+          ],
+          "4.5": [
+            1,
+            1
+          ],
+          "5.0": [
+            1,
+            1
+          ]
+        },
+        "pers_gap_taus": [],
+        "quad_gaps": [
+          [
+            6.0,
+            6.0,
+            1,
+            0
+          ]
+        ],
+        "quad_checked": 169,
+        "lower_bound_violations": 0,
+        "locally_minimal": true,
+        "minimality_checks": 7,
+        "note": "local obstruction: KC vertex x = 0; every edge in at most two triangles",
+        "l": [
+          5.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "u": [
+          7.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        "tris": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            5
+          ]
+        ],
+        "property_holds": true
+      },
+      "B": {
+        "name": "B",
+        "nv": 6,
+        "ntri": 6,
+        "betti": [
+          1,
+          0,
+          0
+        ],
+        "chi": 1,
+        "kc_vertices": [
+          0
+        ],
+        "max_edge_degree": 3,
+        "surface": false,
+        "orientable": null,
+        "planar_surface": null,
+        "free_vertices": [
+          0
+        ],
+        "I1": [
+          [
+            2.0,
+            5.0
+          ],
+          [
+            7.0,
+            10.0
+          ]
+        ],
+        "predicted": [
+          [
+            2.0,
+            5.0
+          ],
+          [
+            7.0,
+            10.0
+          ]
+        ],
+        "matches_prediction": true,
+        "n_orders": 1,
+        "complete": true,
+        "attained": false,
+        "pers": {
+          "0.0": [
+            2,
+            2
+          ],
+          "0.5": [
+            2,
+            2
+          ],
+          "1.0": [
+            2,
+            2
+          ],
+          "1.5": [
+            2,
+            2
+          ],
+          "2.0": [
+            2,
+            2
+          ],
+          "2.5": [
+            2,
+            2
+          ],
+          "3.0": [
+            1,
+            0
+          ],
+          "3.25": [
+            1,
+            0
+          ],
+          "3.5": [
+            1,
+            0
+          ],
+          "3.99": [
+            1,
+            0
+          ],
+          "4.0": [
+            0,
+            0
+          ],
+          "4.5": [
+            0,
+            0
+          ],
+          "5.0": [
+            0,
+            0
+          ]
+        },
+        "pers_gap_taus": [
+          3.0,
+          3.25,
+          3.5,
+          3.99
+        ],
+        "quad_gaps": [
+          [
+            6.0,
+            6.0,
+            1,
+            0
+          ]
+        ],
+        "quad_checked": 169,
+        "lower_bound_violations": 0,
+        "locally_minimal": true,
+        "minimality_checks": 8,
+        "note": "count gap for tau in [3, 4)",
+        "l": [
+          5.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          10.0
+        ],
+        "u": [
+          7.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          10.0
+        ],
+        "tris": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            1,
+            4,
+            5
+          ]
+        ],
+        "property_holds": true
+      },
+      "C": {
+        "name": "C",
+        "nv": 6,
+        "ntri": 7,
+        "betti": [
+          1,
+          1,
+          0
+        ],
+        "chi": 0,
+        "kc_vertices": [],
+        "max_edge_degree": 3,
+        "surface": false,
+        "orientable": null,
+        "planar_surface": null,
+        "free_vertices": [
+          2,
+          4
+        ],
+        "I1": [
+          [
+            2.0,
+            3.0
+          ],
+          [
+            4.0,
+            null
+          ]
+        ],
+        "predicted": [
+          [
+            2.0,
+            3.0
+          ],
+          [
+            4.0,
+            null
+          ]
+        ],
+        "matches_prediction": true,
+        "n_orders": 6,
+        "complete": true,
+        "attained": false,
+        "pers": {
+          "0.0": [
+            2,
+            2
+          ],
+          "0.5": [
+            2,
+            2
+          ],
+          "1.0": [
+            1,
+            1
+          ],
+          "1.5": [
+            1,
+            1
+          ],
+          "2.0": [
+            1,
+            1
+          ],
+          "2.5": [
+            1,
+            1
+          ],
+          "3.0": [
+            1,
+            1
+          ],
+          "3.25": [
+            1,
+            1
+          ],
+          "3.5": [
+            1,
+            1
+          ],
+          "3.99": [
+            1,
+            1
+          ],
+          "4.0": [
+            1,
+            1
+          ],
+          "4.5": [
+            1,
+            1
+          ],
+          "5.0": [
+            1,
+            1
+          ]
+        },
+        "pers_gap_taus": [],
+        "quad_gaps": [
+          [
+            3.5,
+            3.5,
+            1,
+            0
+          ]
+        ],
+        "quad_checked": 121,
+        "lower_bound_violations": 0,
+        "locally_minimal": true,
+        "minimality_checks": 11,
+        "note": "no KC vertex; edge 24 in three triangles",
+        "l": [
+          2.0,
+          1.0,
+          1.0,
+          0.0,
+          3.0,
+          0.0
+        ],
+        "u": [
+          2.0,
+          1.0,
+          4.0,
+          0.0,
+          5.0,
+          0.0
+        ],
+        "tris": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            4,
+            5
+          ]
+        ],
+        "property_holds": true
+      },
+      "D": {
+        "name": "D",
+        "nv": 6,
+        "ntri": 9,
+        "betti": [
+          1,
+          1,
+          0
+        ],
+        "chi": 0,
+        "kc_vertices": [],
+        "max_edge_degree": 2,
+        "surface": true,
+        "orientable": false,
+        "planar_surface": false,
+        "free_vertices": [
+          2,
+          4,
+          5
+        ],
+        "I1": [
+          [
+            0.0,
+            2.0
+          ],
+          [
+            3.0,
+            null
+          ]
+        ],
+        "predicted": [
+          [
+            0.0,
+            2.0
+          ],
+          [
+            3.0,
+            null
+          ]
+        ],
+        "matches_prediction": true,
+        "n_orders": 13,
+        "complete": true,
+        "attained": false,
+        "pers": {
+          "0.0": [
+            2,
+            2
+          ],
+          "0.5": [
+            2,
+            2
+          ],
+          "1.0": [
+            2,
+            2
+          ],
+          "1.5": [
+            2,
+            2
+          ],
+          "2.0": [
+            1,
+            1
+          ],
+          "2.5": [
+            1,
+            1
+          ],
+          "3.0": [
+            1,
+            1
+          ],
+          "3.25": [
+            1,
+            1
+          ],
+          "3.5": [
+            1,
+            1
+          ],
+          "3.99": [
+            1,
+            1
+          ],
+          "4.0": [
+            1,
+            1
+          ],
+          "4.5": [
+            1,
+            1
+          ],
+          "5.0": [
+            1,
+            1
+          ]
+        },
+        "pers_gap_taus": [],
+        "quad_gaps": [
+          [
+            2.5,
+            2.5,
+            1,
+            0
+          ]
+        ],
+        "quad_checked": 81,
+        "lower_bound_violations": 0,
+        "locally_minimal": true,
+        "minimality_checks": 6,
+        "note": "Moebius band, boundary 0-1-3",
+        "l": [
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          1.0,
+          2.0
+        ],
+        "u": [
+          0.0,
+          0.0,
+          3.0,
+          0.0,
+          4.0,
+          4.0
+        ],
+        "tris": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            2,
+            5
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            3,
+            5
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "property_holds": true
+      },
+      "E": {
+        "name": "E",
+        "nv": 7,
+        "ntri": 13,
+        "betti": [
+          1,
+          2,
+          0
+        ],
+        "chi": -1,
+        "kc_vertices": [],
+        "max_edge_degree": 2,
+        "surface": true,
+        "orientable": true,
+        "planar_surface": false,
+        "free_vertices": [
+          1,
+          3,
+          6
+        ],
+        "I1": [
+          [
+            1.0,
+            null
+          ],
+          [
+            2.0,
+            4.0
+          ],
+          [
+            5.0,
+            null
+          ]
+        ],
+        "predicted": [
+          [
+            1.0,
+            null
+          ],
+          [
+            2.0,
+            4.0
+          ],
+          [
+            5.0,
+            null
+          ]
+        ],
+        "matches_prediction": true,
+        "n_orders": 13,
+        "complete": true,
+        "attained": false,
+        "pers": {
+          "0.0": [
+            3,
+            3
+          ],
+          "0.5": [
+            3,
+            3
+          ],
+          "1.0": [
+            3,
+            3
+          ],
+          "1.5": [
+            3,
+            3
+          ],
+          "2.0": [
+            2,
+            2
+          ],
+          "2.5": [
+            2,
+            2
+          ],
+          "3.0": [
+            2,
+            2
+          ],
+          "3.25": [
+            2,
+            2
+          ],
+          "3.5": [
+            2,
+            2
+          ],
+          "3.99": [
+            2,
+            2
+          ],
+          "4.0": [
+            2,
+            2
+          ],
+          "4.5": [
+            2,
+            2
+          ],
+          "5.0": [
+            2,
+            2
+          ]
+        },
+        "pers_gap_taus": [],
+        "quad_gaps": [
+          [
+            4.5,
+            4.5,
+            2,
+            1
+          ]
+        ],
+        "quad_checked": 225,
+        "lower_bound_violations": 0,
+        "locally_minimal": true,
+        "minimality_checks": 6,
+        "note": "punctured torus, boundary 0-4-5",
+        "l": [
+          0.0,
+          4.0,
+          0.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "u": [
+          0.0,
+          7.0,
+          0.0,
+          6.0,
+          1.0,
+          2.0,
+          5.0
+        ],
+        "tris": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            5
+          ],
+          [
+            0,
+            2,
+            3
+          ],
+          [
+            0,
+            2,
+            6
+          ],
+          [
+            0,
+            4,
+            6
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            1,
+            3,
+            4
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            2,
+            3,
+            5
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            3,
+            4,
+            6
+          ],
+          [
+            3,
+            5,
+            6
+          ]
+        ],
+        "property_holds": true
+      },
+      "F": {
+        "name": "F",
+        "nv": 7,
+        "ntri": 20,
+        "betti": [
+          1,
+          0,
+          7
+        ],
+        "chi": 8,
+        "kc_vertices": [],
+        "max_edge_degree": 5,
+        "surface": false,
+        "orientable": null,
+        "planar_surface": null,
+        "free_vertices": [
+          2,
+          4
+        ],
+        "I1": [
+          [
+            4.0,
+            6.0
+          ],
+          [
+            8.0,
+            11.0
+          ]
+        ],
+        "predicted": [
+          [
+            4.0,
+            6.0
+          ],
+          [
+            8.0,
+            11.0
+          ]
+        ],
+        "matches_prediction": true,
+        "n_orders": 6,
+        "complete": true,
+        "attained": false,
+        "pers": {
+          "0.0": [
+            2,
+            2
+          ],
+          "0.5": [
+            2,
+            2
+          ],
+          "1.0": [
+            2,
+            2
+          ],
+          "1.5": [
+            2,
+            2
+          ],
+          "2.0": [
+            1,
+            1
+          ],
+          "2.5": [
+            1,
+            1
+          ],
+          "3.0": [
+            1,
+            0
+          ],
+          "3.25": [
+            1,
+            0
+          ],
+          "3.5": [
+            0,
+            0
+          ],
+          "3.99": [
+            0,
+            0
+          ],
+          "4.0": [
+            0,
+            0
+          ],
+          "4.5": [
+            0,
+            0
+          ],
+          "5.0": [
+            0,
+            0
+          ]
+        },
+        "pers_gap_taus": [
+          3.0,
+          3.25
+        ],
+        "quad_gaps": [
+          [
+            7.0,
+            7.0,
+            1,
+            0
+          ]
+        ],
+        "quad_checked": 169,
+        "lower_bound_violations": 0,
+        "locally_minimal": null,
+        "minimality_checks": 0,
+        "note": "Example 20: no KC vertex; image bars of lengths 2 and 3, yet every function has a bar of length >= 3.5",
+        "l": [
+          4.0,
+          2.0,
+          2.0,
+          0.0,
+          6.0,
+          0.0,
+          11.0
+        ],
+        "u": [
+          4.0,
+          2.0,
+          8.0,
+          0.0,
+          10.0,
+          0.0,
+          11.0
+        ],
+        "tris": [
+          [
+            0,
+            1,
+            4
+          ],
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            0,
+            3,
+            6
+          ],
+          [
+            0,
+            4,
+            5
+          ],
+          [
+            0,
+            4,
+            6
+          ],
+          [
+            0,
+            5,
+            6
+          ],
+          [
+            1,
+            2,
+            4
+          ],
+          [
+            1,
+            2,
+            5
+          ],
+          [
+            1,
+            2,
+            6
+          ],
+          [
+            1,
+            4,
+            6
+          ],
+          [
+            1,
+            5,
+            6
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            3,
+            6
+          ],
+          [
+            2,
+            4,
+            5
+          ],
+          [
+            2,
+            4,
+            6
+          ],
+          [
+            2,
+            5,
+            6
+          ],
+          [
+            3,
+            4,
+            6
+          ],
+          [
+            3,
+            5,
+            6
+          ],
+          [
+            4,
+            5,
+            6
+          ]
+        ],
+        "property_holds": true
+      }
+    },
+    "transfers": [
+      {
+        "surface": "RP^2 (D + cone)",
+        "nv": 7,
+        "ntri": 12,
+        "betti": [
+          1,
+          1,
+          1
+        ],
+        "chi": 1,
+        "closed_surface": true,
+        "orientable": false,
+        "I1": "[0,2) [3,inf)",
+        "n_orders": 13,
+        "complete": true,
+        "attained": false
+      },
+      {
+        "surface": "torus (E + cone)",
+        "nv": 8,
+        "ntri": 16,
+        "betti": [
+          1,
+          2,
+          1
+        ],
+        "chi": 0,
+        "closed_surface": true,
+        "orientable": true,
+        "I1": "[1,inf) [2,4) [5,inf)",
+        "n_orders": 13,
+        "complete": true,
+        "attained": false
+      },
+      {
+        "surface": "Klein bottle (D + Moebius band)",
+        "nv": 9,
+        "ntri": 18,
+        "betti": [
+          1,
+          2,
+          1
+        ],
+        "chi": 0,
+        "closed_surface": true,
+        "orientable": false,
+        "I1": "[0,2) [3,inf) [7,inf)",
+        "n_orders": 13,
+        "complete": true,
+        "attained": false
+      },
+      {
+        "surface": "genus 2 (E + punctured torus)",
+        "nv": 11,
+        "ntri": 26,
+        "betti": [
+          1,
+          4,
+          1
+        ],
+        "chi": -2,
+        "closed_surface": true,
+        "orientable": true,
+        "I1": "[1,inf) [2,4) [5,inf) [10,inf) [10,inf)",
+        "n_orders": 13,
+        "complete": true,
+        "attained": false
+      },
+      {
+        "surface": "non-orientable genus 3 (D + punctured torus)",
+        "nv": 10,
+        "ntri": 22,
+        "betti": [
+          1,
+          3,
+          1
+        ],
+        "chi": -1,
+        "closed_surface": true,
+        "orientable": false,
+        "I1": "[0,2) [3,inf) [7,inf) [7,inf)",
+        "n_orders": 13,
+        "complete": true,
+        "attained": false
+      }
+    ],
+    "certificates_verdict": "SUPPORTED",
+    "count_note": "count gaps without a KC vertex in the census: 0; counts are attained on every surface (Theorem 10), and Example 20 (certificate F) is a KC-free 2-complex whose counts are not attained",
+    "example20": {
+      "verdict": "SUPPORTED",
+      "kc_vertices": [],
+      "max_edge_degree": 5,
+      "image_barcode": "[4,6) [8,11)",
+      "matches_prediction": true,
+      "order_types": 6,
+      "complete": true,
+      "min_count_vs_image": {
+        "2.0": [
+          1,
+          1
+        ],
+        "2.5": [
+          1,
+          1
+        ],
+        "3.0": [
+          1,
+          0
+        ],
+        "3.25": [
+          1,
+          0
+        ],
+        "3.49": [
+          1,
+          0
+        ],
+        "3.5": [
+          0,
+          0
+        ],
+        "4.0": [
+          0,
+          0
+        ]
+      },
+      "count_gap_taus": [
+        3.0,
+        3.25,
+        3.49
+      ],
+      "grid_points": 425,
+      "grid_min_longest": 3.5,
+      "grid_argmin": [
+        [
+          7.5,
+          7.5
+        ]
+      ],
+      "bound_holds_on_grid": true,
+      "barcode_attained": false
+    }
+  },
+  "surfaces": {
+    "theorem10": {
+      "verdict": "SUPPORTED",
+      "instances": 7199,
+      "families": 18,
+      "max_vertices": 16,
+      "failures": 0,
+      "fast_mismatches": 0,
+      "planar_barcode_failures": 0,
+      "nonplanar_barcode_defects": 333,
+      "census_not_attained_rechecked": 48,
+      "census_recheck_failures": 0,
+      "table": [
+        {
+          "family": "RP^2 (7 vertices)",
+          "instances": 400,
+          "max_vertices": 7,
+          "bhat": 1,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 1,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.93
+        },
+        {
+          "family": "torus 3x3",
+          "instances": 400,
+          "max_vertices": 9,
+          "bhat": 2,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 2,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.915
+        },
+        {
+          "family": "torus 4x4",
+          "instances": 400,
+          "max_vertices": 16,
+          "bhat": 2,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 2,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9825
+        },
+        {
+          "family": "torus 3x5",
+          "instances": 400,
+          "max_vertices": 15,
+          "bhat": 2,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 2,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.94
+        },
+        {
+          "family": "Klein bottle 3x3",
+          "instances": 400,
+          "max_vertices": 9,
+          "bhat": 2,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 2,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.905
+        },
+        {
+          "family": "Klein bottle 4x4",
+          "instances": 400,
+          "max_vertices": 16,
+          "bhat": 2,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 2,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9675
+        },
+        {
+          "family": "Klein bottle (D+D)",
+          "instances": 400,
+          "max_vertices": 9,
+          "bhat": 2,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 2,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.8775
+        },
+        {
+          "family": "genus 2 (E+E)",
+          "instances": 400,
+          "max_vertices": 11,
+          "bhat": 4,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 3,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.835
+        },
+        {
+          "family": "N3 (D+E)",
+          "instances": 400,
+          "max_vertices": 10,
+          "bhat": 3,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 3,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.865
+        },
+        {
+          "family": "Moebius band (6 v.)",
+          "instances": 400,
+          "max_vertices": 6,
+          "bhat": 1,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 1,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9925
+        },
+        {
+          "family": "Moebius band (grid)",
+          "instances": 400,
+          "max_vertices": 9,
+          "bhat": 1,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 1,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9925
+        },
+        {
+          "family": "punctured torus (7 v.)",
+          "instances": 400,
+          "max_vertices": 7,
+          "bhat": 2,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 1,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9925
+        },
+        {
+          "family": "punctured torus 4x4",
+          "instances": 400,
+          "max_vertices": 16,
+          "bhat": 2,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 1,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9875
+        },
+        {
+          "family": "punctured Klein bottle",
+          "instances": 400,
+          "max_vertices": 9,
+          "bhat": 2,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 1,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9875
+        },
+        {
+          "family": "torus with two holes",
+          "instances": 400,
+          "max_vertices": 16,
+          "bhat": 2,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 1,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 0.9975
+        },
+        {
+          "family": "disk",
+          "instances": 400,
+          "max_vertices": 12,
+          "bhat": 0,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 0,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 1.0
+        },
+        {
+          "family": "annulus",
+          "instances": 399,
+          "max_vertices": 12,
+          "bhat": 0,
+          "closed": false,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 0,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 1.0
+        },
+        {
+          "family": "sphere",
+          "instances": 400,
+          "max_vertices": 12,
+          "bhat": 0,
+          "closed": true,
+          "in_box": 1.0,
+          "finite_equal": 1.0,
+          "essential_count_equal": 1.0,
+          "max_mismatch": 0,
+          "counts_equal": 1.0,
+          "fast_equal_exact": 1.0,
+          "barcode_attained_by_fD": 1.0
+        }
+      ]
+    },
+    "corollary14": {
+      "verdict": "SUPPORTED",
+      "exact_checks": 42,
+      "exact_agree": 42,
+      "exact_max_n": 100,
+      "exact_max_seconds": 2.7711360990000458,
+      "fast_seconds_at_exact_max": 0.0006901059999790959,
+      "witness_checks": 10,
+      "witness_agree": 10,
+      "witness_in_box": 10,
+      "witness_max_n": 10000,
+      "max_n": 2560000,
+      "seconds_at_max_n": {
+        "terrain": 5.153123286999971,
+        "torus": 5.133836790000032
+      },
+      "slope_terrain": 1.1482421171575277,
+      "slope_torus": 1.1458507778105902,
+      "timing_in_box": true,
+      "torus_global_bars": 2,
+      "timing": [
+        {
+          "kind": "terrain",
+          "n": 10000,
+          "t_build": 0.0073157010000386435,
+          "t_finite": 0.001965572000017346,
+          "t_global": 0.007023909999929856,
+          "t_total": 0.008908556000051249,
+          "t_witness": 7.37469999876339e-05,
+          "finite_bars": 27.0,
+          "global_bars": 0.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "terrain",
+          "n": 40000,
+          "t_build": 0.02764604200001486,
+          "t_finite": 0.00851051200004349,
+          "t_global": 0.028216481000072235,
+          "t_total": 0.03643161600007261,
+          "t_witness": 0.00031895500001155597,
+          "finite_bars": 133.0,
+          "global_bars": 0.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "terrain",
+          "n": 160000,
+          "t_build": 0.13937545200008117,
+          "t_finite": 0.04276170100001764,
+          "t_global": 0.13028742999995302,
+          "t_total": 0.17567563500006145,
+          "t_witness": 0.0020141640000019834,
+          "finite_bars": 536.0,
+          "global_bars": 0.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "terrain",
+          "n": 640000,
+          "t_build": 0.5899202460000197,
+          "t_finite": 0.24046493200000896,
+          "t_global": 0.650905840000064,
+          "t_total": 0.891370772000073,
+          "t_witness": 0.012438052999982574,
+          "finite_bars": 2117.0,
+          "global_bars": 0.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "terrain",
+          "n": 2560000,
+          "t_build": 2.9389315299999907,
+          "t_finite": 1.6449172730000328,
+          "t_global": 3.5179248470000175,
+          "t_total": 5.153123286999971,
+          "t_witness": 0.061949020000042765,
+          "finite_bars": 8572.0,
+          "global_bars": 0.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "torus",
+          "n": 10000,
+          "t_build": 0.00435639500005891,
+          "t_finite": 0.0021056250000128784,
+          "t_global": 0.006826947000035943,
+          "t_total": 0.008932572000048822,
+          "t_witness": 7.573400000637776e-05,
+          "finite_bars": 34.0,
+          "global_bars": 2.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "torus",
+          "n": 40000,
+          "t_build": 0.015567003000001023,
+          "t_finite": 0.008718379000015375,
+          "t_global": 0.027639319000059004,
+          "t_total": 0.036407184000040616,
+          "t_witness": 0.0002833559999544377,
+          "finite_bars": 134.0,
+          "global_bars": 2.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "torus",
+          "n": 160000,
+          "t_build": 0.06184857699997792,
+          "t_finite": 0.04400352599998314,
+          "t_global": 0.13056062900000143,
+          "t_total": 0.17571495400000003,
+          "t_witness": 0.001980236999997942,
+          "finite_bars": 546.0,
+          "global_bars": 2.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "torus",
+          "n": 640000,
+          "t_build": 0.32240657599993483,
+          "t_finite": 0.21787008699993748,
+          "t_global": 0.655031167000061,
+          "t_total": 0.8729012539999985,
+          "t_witness": 0.012597880000043915,
+          "finite_bars": 2156.0,
+          "global_bars": 2.0,
+          "in_box": 1.0,
+          "reps": 3
+        },
+        {
+          "kind": "torus",
+          "n": 2560000,
+          "t_build": 1.5618693129999883,
+          "t_finite": 1.6220716160000848,
+          "t_global": 3.510692598999867,
+          "t_total": 5.133836790000032,
+          "t_witness": 0.0578350529999625,
+          "finite_bars": 8641.0,
+          "global_bars": 2.0,
+          "in_box": 1.0,
+          "reps": 3
+        }
+      ]
+    },
+    "theorem13": {
+      "verdict": "SUPPORTED",
+      "runs": 16,
+      "boxes": 16720,
+      "inconsistent": 0,
+      "reference_runs": 8,
+      "reference_matches": 8,
+      "attaining_representatives": 111834,
+      "table": [
+        {
+          "check": "decide",
+          "surface": "mobius",
+          "boxes": 400,
+          "seed": 11,
+          "seconds": 0.51,
+          "notes": "",
+          "finite_equal": 400.0,
+          "fD_attains": 393.0,
+          "fD fails -> NOT attained": 7.0,
+          "instances": 400,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "decide",
+          "surface": "rp2",
+          "boxes": 300,
+          "seed": 12,
+          "seconds": 2.98,
+          "notes": "",
+          "finite_equal": 300.0,
+          "fD_attains": 255.0,
+          "fD fails -> NOT attained": null,
+          "instances": 300,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": 45.0,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "decide",
+          "surface": "ptorus",
+          "boxes": 200,
+          "seed": 21,
+          "seconds": 1.18,
+          "notes": "",
+          "finite_equal": 200.0,
+          "fD_attains": 193.0,
+          "fD fails -> NOT attained": 7.0,
+          "instances": 200,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "decide",
+          "surface": "torus",
+          "boxes": 200,
+          "seed": 22,
+          "seconds": 14.92,
+          "notes": "",
+          "finite_equal": 200.0,
+          "fD_attains": 156.0,
+          "fD fails -> NOT attained": null,
+          "instances": 200,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": 44.0,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max",
+          "surface": "mobius",
+          "boxes": 150,
+          "seed": 32,
+          "seconds": 3.63,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": 148.0,
+          "fD fails -> NOT attained": null,
+          "instances": 150,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 2745.0,
+          "attained_instances": 148.0,
+          "agree(attained <-> fD attains)": 150.0,
+          "max_excess_over_fD": 0.0,
+          "max_above_Lstar": null,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max",
+          "surface": "ptorus",
+          "boxes": 60,
+          "seed": 31,
+          "seconds": 4.21,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": 59.0,
+          "fD fails -> NOT attained": null,
+          "instances": 60,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 1285.0,
+          "attained_instances": 59.0,
+          "agree(attained <-> fD attains)": 60.0,
+          "max_excess_over_fD": 0.0,
+          "max_above_Lstar": null,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max_closed",
+          "surface": "rp2",
+          "boxes": 150,
+          "seed": 41,
+          "seconds": 3.46,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": null,
+          "fD fails -> NOT attained": null,
+          "instances": 150,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 3930.0,
+          "attained_instances": 150.0,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": 3207.0,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max_closed",
+          "surface": "torus",
+          "boxes": 60,
+          "seed": 42,
+          "seconds": 5.03,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": null,
+          "fD fails -> NOT attained": null,
+          "instances": 60,
+          "run": "reference",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 2316.0,
+          "attained_instances": 60.0,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": 1923.0,
+          "matches_reference": true,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "decide",
+          "surface": "mobius",
+          "boxes": 4000,
+          "seed": 111,
+          "seconds": 4.81,
+          "notes": "",
+          "finite_equal": 4000.0,
+          "fD_attains": 3962.0,
+          "fD fails -> NOT attained": 38.0,
+          "instances": 4000,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "decide",
+          "surface": "rp2",
+          "boxes": 3000,
+          "seed": 112,
+          "seconds": 25.85,
+          "notes": "",
+          "finite_equal": 3000.0,
+          "fD_attains": 2553.0,
+          "fD fails -> NOT attained": null,
+          "instances": 3000,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": 447.0,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "decide",
+          "surface": "ptorus",
+          "boxes": 2000,
+          "seed": 121,
+          "seconds": 11.15,
+          "notes": "",
+          "finite_equal": 2000.0,
+          "fD_attains": 1940.0,
+          "fD fails -> NOT attained": 60.0,
+          "instances": 2000,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "decide",
+          "surface": "torus",
+          "boxes": 2000,
+          "seed": 122,
+          "seconds": 74.3,
+          "notes": "",
+          "finite_equal": 2000.0,
+          "fD_attains": 1543.0,
+          "fD fails -> NOT attained": null,
+          "instances": 2000,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": 457.0,
+          "attaining_max_realisations": null,
+          "attained_instances": null,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": null,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max",
+          "surface": "mobius",
+          "boxes": 1500,
+          "seed": 132,
+          "seconds": 30.54,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": 1477.0,
+          "fD fails -> NOT attained": null,
+          "instances": 1500,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 27512.0,
+          "attained_instances": 1477.0,
+          "agree(attained <-> fD attains)": 1500.0,
+          "max_excess_over_fD": 0.0,
+          "max_above_Lstar": null,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max",
+          "surface": "ptorus",
+          "boxes": 600,
+          "seed": 131,
+          "seconds": 47.76,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": 591.0,
+          "fD fails -> NOT attained": null,
+          "instances": 600,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 13819.0,
+          "attained_instances": 591.0,
+          "agree(attained <-> fD attains)": 600.0,
+          "max_excess_over_fD": 0.0,
+          "max_above_Lstar": null,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max_closed",
+          "surface": "rp2",
+          "boxes": 1500,
+          "seed": 141,
+          "seconds": 36.02,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": null,
+          "fD fails -> NOT attained": null,
+          "instances": 1500,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 39141.0,
+          "attained_instances": 1500.0,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": 33559.0,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        },
+        {
+          "check": "max_closed",
+          "surface": "torus",
+          "boxes": 600,
+          "seed": 142,
+          "seconds": 51.83,
+          "notes": "",
+          "finite_equal": null,
+          "fD_attains": null,
+          "fD fails -> NOT attained": null,
+          "instances": 600,
+          "run": "extended",
+          "fD fails -> attained | peak witness found": null,
+          "attaining_max_realisations": 21086.0,
+          "attained_instances": 600.0,
+          "agree(attained <-> fD attains)": null,
+          "max_excess_over_fD": null,
+          "max_above_Lstar": 18166.0,
+          "matches_reference": null,
+          "consistent_with_theorem": true
+        }
+      ]
+    }
+  },
+  "graphs": {
+    "verdict": "SUPPORTED",
+    "instances": 600,
+    "failures": 0,
+    "nonplanar_instances": 400,
+    "with_bars": 587,
+    "table": [
+      {
+        "kind": "K3,3",
+        "instances": 200,
+        "mean_bars": 4.0,
+        "attained_by_u": 1.0
+      },
+      {
+        "kind": "K5",
+        "instances": 200,
+        "mean_bars": 6.0,
+        "attained_by_u": 1.0
+      },
+      {
+        "kind": "random",
+        "instances": 200,
+        "mean_bars": 8.035,
+        "attained_by_u": 1.0
+      }
+    ]
+  },
+  "middle_degrees": {
+    "verdict": "SUPPORTED",
+    "cases": 7,
+    "spheres_and_ball_ok": true,
+    "barcode_not_attained_all": true,
+    "count_gaps_all": true,
+    "lifts_consistent": true,
+    "moebius_s3_vertices": 24,
+    "moebius_s3_order_types": 13,
+    "ex18_s3_vertices": 31,
+    "ex18_min_longest_bar": 4.0,
+    "seconds": 0.6,
+    "rows": [
+      {
+        "case": "Moebius band (Thm 11) in S^3",
+        "d": 3,
+        "k": 1,
+        "construction": "join of two triangle boundaries + stellar subdivisions + padding",
+        "vertices": 24,
+        "facets": 72,
+        "betti": "[1, 0, 0, 1]",
+        "pseudomanifold": true,
+        "free_vertices": 3,
+        "image_barcode": "[0,2) [3,5)",
+        "order_types": 13,
+        "complete": true,
+        "attained": false
+      },
+      {
+        "case": "Moebius band (Thm 11) in B^3",
+        "d": 3,
+        "k": 1,
+        "construction": "as above, open star of one padding vertex removed",
+        "vertices": 23,
+        "facets": 66,
+        "betti": "[1, 0, 0, 0]",
+        "pseudomanifold": false,
+        "free_vertices": 3,
+        "image_barcode": "[0,2) [3,5)",
+        "order_types": 13,
+        "complete": true,
+        "attained": false
+      },
+      {
+        "case": "Example 18 in S^3 (counts)",
+        "d": 3,
+        "k": 1,
+        "construction": "join of two triangle boundaries + stellar subdivisions + padding",
+        "vertices": 31,
+        "facets": 112,
+        "betti": "[1, 0, 0, 1]",
+        "pseudomanifold": true,
+        "free_vertices": 1,
+        "image_barcode": "[2,5) [7,10)",
+        "order_types": 1,
+        "complete": true,
+        "count_gap_taus": "[3.0, 3.5, 3.99]",
+        "min_count_vs_image": "{3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}",
+        "min_longest_bar_on_grid": 4.0
+      },
+      {
+        "case": "Moebius band, suspended",
+        "d": 4,
+        "k": 2,
+        "construction": "suspension, apexes fixed at -1",
+        "vertices": 26,
+        "facets": 144,
+        "betti": "[1, 0, 0, 0, 1]",
+        "pseudomanifold": true,
+        "free_vertices": 3,
+        "image_barcode": "[0,2) [3,5)",
+        "order_types": 13,
+        "complete": true,
+        "attained": false,
+        "same_image_as_degree_1": true,
+        "suspension_iso_failures": 0
+      },
+      {
+        "case": "Example 18, suspended (counts)",
+        "d": 4,
+        "k": 2,
+        "construction": "suspension, apexes fixed at -1",
+        "vertices": 33,
+        "facets": 224,
+        "betti": "[1, 0, 0, 0, 1]",
+        "pseudomanifold": true,
+        "free_vertices": 1,
+        "image_barcode": "[2,5) [7,10)",
+        "order_types": 1,
+        "complete": true,
+        "count_gap_taus": "[3.0, 3.5, 3.99]",
+        "min_count_vs_image": "{3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}",
+        "same_image_as_degree_1": true
+      },
+      {
+        "case": "Moebius band, joined with S^0",
+        "d": 4,
+        "k": 1,
+        "construction": "join with S^0 fixed at M",
+        "vertices": 26,
+        "facets": 144,
+        "betti": "[1, 0, 0, 0, 1]",
+        "pseudomanifold": true,
+        "free_vertices": 3,
+        "image_barcode": "[0,2) [3,5)",
+        "order_types": 13,
+        "complete": true,
+        "attained": false,
+        "same_image_as_S3": true
+      },
+      {
+        "case": "Example 18, joined with S^0 (counts)",
+        "d": 4,
+        "k": 1,
+        "construction": "join with S^0 fixed at M",
+        "vertices": 33,
+        "facets": 224,
+        "betti": "[1, 0, 0, 0, 1]",
+        "pseudomanifold": true,
+        "free_vertices": 1,
+        "image_barcode": "[2,5) [7,10)",
+        "order_types": 1,
+        "complete": true,
+        "count_gap_taus": "[3.0, 3.5, 3.99]",
+        "min_count_vs_image": "{3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}",
+        "same_image_as_S3": true
+      }
+    ]
+  },
+  "grids3d": {
+    "verdict": "SUPPORTED",
+    "degree2": {
+      "boxes": 500,
+      "shapes": 5,
+      "theorem_failures": 0,
+      "not_in_box": 0,
+      "ball_own_fD_failures": 0,
+      "padding_lemma_failures": 0,
+      "boxes_with_image_bars": 216
+    },
+    "degree1": {
+      "boxes": 2000,
+      "not_attained": 0,
+      "undecided": 0,
+      "witness_failures": 0,
+      "count_gaps": 0,
+      "decided_by_witness": 1890
+    }
+  },
+  "scaling": {
+    "slopes": {
+      "t_total": 1.2081256073470599,
+      "t_sort": 1.1408219599530451,
+      "t_sweep": 1.25734913312931,
+      "t_topdown": 1.2847193769697138,
+      "t_curve": 1.0910325797150355,
+      "ops": 1.006908957376543,
+      "array_bytes": 0.9999999999999996,
+      "t_total_over_nlogn": 0.13215040784000176,
+      "time_vs_m_fixed_n": 0.32420910006113546
+    },
+    "verdict": "NOT SUPPORTED",
+    "note": "full frozen range",
+    "skipped_sizes": [],
+    "relabelled": {
+      "slopes": {
+        "v2_t_total": 1.203070674229857,
+        "v2_t_sweep": 1.2538113857945823,
+        "v2_t_relabel": 1.2003763031968924,
+        "pers_total": 1.1823706564717156,
+        "pers_sweep": 1.2258247526543369
+      },
+      "consistent": true,
+      "skipped": []
+    },
+    "memory": {
+      "verdict": "SUPPORTED (post hoc): in-cache slope in the pre-registered range; the excess appears out of cache, is shared by plain persistence, and tracks random-access latency",
+      "caches": {
+        "L1d": 32768,
+        "L1i": 32768,
+        "L2": 1048576,
+        "L3": 40370176
+      },
+      "llc_bytes": 40370176,
+      "sizes_in_llc": 3,
+      "sizes_out_llc": 6,
+      "slope_cert_in": 1.0727249349530055,
+      "slope_cert_out": 1.255710371137466,
+      "slope_pers_in": 1.0699358885629089,
+      "slope_pers_out": 1.2340368649109594,
+      "gather_random_ns_min": 1.3059409409377165,
+      "gather_random_ns_max": 11.29533616000117,
+      "uf_ops_per_vertex_range": [
+        3.642988405893949,
+        3.855267864037632
+      ]
+    }
+  },
+  "compression": {
+    "verdict": "SUPPORTED",
+    "stats": {
+      "runs": 264,
+      "bound_violations": 0,
+      "valid_given_bound": 264,
+      "runs_with_bound": 264,
+      "naive_overcount_runs": 107
+    },
+    "counts": {
+      "fields": 11,
+      "compressions": 132,
+      "certificate_evaluations": 264,
+      "sdrbench_evaluations": 120,
+      "overcount_runs": 107,
+      "overcount_runs_sdrbench": 72,
+      "undercount_runs": 36,
+      "undercount_runs_sdrbench": 17,
+      "bound_respected": 264,
+      "valid": 264
+    },
+    "uniform_baseline": {
+      "verdict": "SUPPORTED",
+      "absolute_runs": 198,
+      "absolute_identity_holds": 198,
+      "relative_runs": 66,
+      "relative_T_above_uniform": 52,
+      "monotonicity_violations": 0,
+      "relative_mean_T": 530.3636363636364,
+      "relative_mean_T_uniform": 424.8787878787879,
+      "relative_mean_N_true": 619.1818181818181
+    },
+    "sdrbench_executed": [
+      "CESM-ATM",
+      "Hurricane-ISABEL-Pf"
+    ],
+    "summary": [
+      {
+        "kind": "sdrbench",
+        "method": "SZ",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9693836762627035,
+        "naive_overcount": 3.6,
+        "naive_undercount": 0.0,
+        "bits_per_value": 2.332437370469136,
+        "t_compress": 0.702037119599936,
+        "t_certify": 4.148827005000112
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9863164430022392,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.4,
+        "bits_per_value": 2.332437370469136,
+        "t_compress": 0.702037119599936,
+        "t_certify": 4.078112847999909
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.7488521449692576,
+        "naive_overcount": 55.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 0.863287290074074,
+        "t_compress": 0.5890524176000327,
+        "t_certify": 3.957798384399939
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.8684700134469369,
+        "naive_overcount": 1.2,
+        "naive_undercount": 0.2,
+        "bits_per_value": 0.863287290074074,
+        "t_compress": 0.5890524176000327,
+        "t_certify": 3.9801150649997
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.215076206465791,
+        "naive_overcount": 6345.8,
+        "naive_undercount": 0.0,
+        "bits_per_value": 0.2234464612345679,
+        "t_compress": 0.5154518014000132,
+        "t_certify": 3.5714528077997785
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.4145932565069659,
+        "naive_overcount": 186.6,
+        "naive_undercount": 0.2,
+        "bits_per_value": 0.2234464612345679,
+        "t_compress": 0.5154518014000132,
+        "t_certify": 3.622809789999792
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9700830815134273,
+        "naive_overcount": 2.4,
+        "naive_undercount": 0.8,
+        "bits_per_value": 2.0043047640493823,
+        "t_compress": 0.7098821854000562,
+        "t_certify": 4.198736923599972
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9832739044790696,
+        "naive_overcount": 0.0,
+        "naive_undercount": 1.0,
+        "bits_per_value": 2.0043047640493823,
+        "t_compress": 0.7098821854000562,
+        "t_certify": 4.144169027800126
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.7512085887386007,
+        "naive_overcount": 62.8,
+        "naive_undercount": 0.0,
+        "bits_per_value": 0.5498265169382716,
+        "t_compress": 0.6246180718000687,
+        "t_certify": 4.21635133080008
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.86359792846405,
+        "naive_overcount": 2.8,
+        "naive_undercount": 0.0,
+        "bits_per_value": 0.5498265169382716,
+        "t_compress": 0.6246180718000687,
+        "t_certify": 4.18892156740003
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.202518517717643,
+        "naive_overcount": 2107.4,
+        "naive_undercount": 0.0,
+        "bits_per_value": 0.07858406439506173,
+        "t_compress": 0.537368771400088,
+        "t_certify": 4.143357439400006
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.39493519698166113,
+        "naive_overcount": 118.6,
+        "naive_undercount": 0.0,
+        "bits_per_value": 0.07858406439506173,
+        "t_compress": 0.537368771400088,
+        "t_certify": 3.991061453200018
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9910871892086328,
+        "naive_overcount": 0.0,
+        "naive_undercount": 2.6,
+        "bits_per_value": 6.474462597925926,
+        "t_compress": 1.6070860933999938,
+        "t_certify": 4.119171129999813
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.997868601986249,
+        "naive_overcount": 0.2,
+        "naive_undercount": 0.0,
+        "bits_per_value": 6.474462597925926,
+        "t_compress": 1.6070860933999938,
+        "t_certify": 4.172712871600015
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9244508582786441,
+        "naive_overcount": 11.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 4.175599867654321,
+        "t_compress": 1.2839655588000825,
+        "t_certify": 4.13463763460013
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9697738598428302,
+        "naive_overcount": 0.6,
+        "naive_undercount": 0.8,
+        "bits_per_value": 4.175599867654321,
+        "t_compress": 1.2839655588000825,
+        "t_certify": 4.199314781400062
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.5949651732633789,
+        "naive_overcount": 915.4,
+        "naive_undercount": 0.0,
+        "bits_per_value": 2.604940860049383,
+        "t_compress": 1.1923778807999952,
+        "t_certify": 4.159373792800034
+      },
+      {
+        "kind": "sdrbench",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.7383547791338495,
+        "naive_overcount": 25.4,
+        "naive_undercount": 1.2,
+        "bits_per_value": 2.604940860049383,
+        "t_compress": 1.1923778807999952,
+        "t_certify": 4.164908443199965
+      },
+      {
+        "kind": "sdrbench",
+        "method": "ZFP",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.969760298233713,
+        "naive_overcount": 0.2,
+        "naive_undercount": 0.6,
+        "bits_per_value": 6.617395881086419,
+        "t_compress": 0.7183314321999206,
+        "t_certify": 4.04824188019993
+      },
+      {
+        "kind": "sdrbench",
+        "method": "ZFP",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9861687475604262,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 6.617395881086419,
+        "t_compress": 0.7183314321999206,
+        "t_certify": 4.037445485800072
+      },
+      {
+        "kind": "sdrbench",
+        "method": "ZFP",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.7321070787271925,
+        "naive_overcount": 3.4,
+        "naive_undercount": 0.0,
+        "bits_per_value": 3.9634499646419754,
+        "t_compress": 0.5913630753999314,
+        "t_certify": 3.811603216599906
+      },
+      {
+        "kind": "sdrbench",
+        "method": "ZFP",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.8643472369477105,
+        "naive_overcount": 0.2,
+        "naive_undercount": 0.2,
+        "bits_per_value": 3.9634499646419754,
+        "t_compress": 0.5913630753999314,
+        "t_certify": 3.8563700449998577
+      },
+      {
+        "kind": "sdrbench",
+        "method": "ZFP",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.1767422918949047,
+        "naive_overcount": 53.4,
+        "naive_undercount": 0.6,
+        "bits_per_value": 2.30739295762963,
+        "t_compress": 0.4879293864000829,
+        "t_certify": 3.2084939650001614
+      },
+      {
+        "kind": "sdrbench",
+        "method": "ZFP",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 5,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.3600888515873564,
+        "naive_overcount": 1.6,
+        "naive_undercount": 0.0,
+        "bits_per_value": 2.30739295762963,
+        "t_compress": 0.4879293864000829,
+        "t_certify": 3.172362114200132
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9968847352024922,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.16666666666666666,
+        "bits_per_value": 5.473360038097994,
+        "t_compress": 0.013227265666728272,
+        "t_certify": 0.05273175016660995
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.993432496689539,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.16666666666666666,
+        "bits_per_value": 5.473360038097994,
+        "t_compress": 0.013227265666728272,
+        "t_certify": 0.056863076333456775
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9698380311244104,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.6666666666666666,
+        "bits_per_value": 2.2274870695891202,
+        "t_compress": 0.012001913166765613,
+        "t_certify": 0.05127369050001107
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9746675891164919,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.3333333333333333,
+        "bits_per_value": 2.2274870695891202,
+        "t_compress": 0.012001913166765613,
+        "t_certify": 0.05265577466669432
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.7667442731824691,
+        "naive_overcount": 191.0,
+        "naive_undercount": 1.3333333333333333,
+        "bits_per_value": 1.522759331597222,
+        "t_compress": 0.023530818333407904,
+        "t_certify": 0.0524340795000929
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.8388313818996753,
+        "naive_overcount": 6.333333333333333,
+        "naive_undercount": 0.0,
+        "bits_per_value": 1.522759331597222,
+        "t_compress": 0.023530818333407904,
+        "t_certify": 0.053797964666652355
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9968847352024922,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 3.552143614969136,
+        "t_compress": 0.05491838249986358,
+        "t_certify": 0.051943659166833335
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9933790778861201,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.0,
+        "bits_per_value": 3.552143614969136,
+        "t_compress": 0.05491838249986358,
+        "t_certify": 0.05305037233324583
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9732050344914137,
+        "naive_overcount": 0.3333333333333333,
+        "naive_undercount": 0.3333333333333333,
+        "bits_per_value": 1.7407332055362652,
+        "t_compress": 0.027258864666616017,
+        "t_certify": 0.05397120216662188
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9703320035309062,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.3333333333333333,
+        "bits_per_value": 1.7407332055362652,
+        "t_compress": 0.027258864666616017,
+        "t_certify": 0.053775627833298735
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.7810876639426446,
+        "naive_overcount": 39.333333333333336,
+        "naive_undercount": 0.0,
+        "bits_per_value": 0.4760177047164352,
+        "t_compress": 0.026845378833362094,
+        "t_certify": 0.0557080021665873
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.811565107335661,
+        "naive_overcount": 2.5,
+        "naive_undercount": 0.3333333333333333,
+        "bits_per_value": 0.4760177047164352,
+        "t_compress": 0.026845378833362094,
+        "t_certify": 0.05646350483334572
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 1.0,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 19.358130937741127,
+        "t_compress": 0.08694008766678962,
+        "t_certify": 0.05215760916667023
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 1.0,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 19.358130937741127,
+        "t_compress": 0.08694008766678962,
+        "t_certify": 0.05354750533335088
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9953271028037384,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.0,
+        "bits_per_value": 11.749800317081403,
+        "t_compress": 0.05036522666652369,
+        "t_certify": 0.05185525716660777
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9915064102564103,
+        "naive_overcount": 0.3333333333333333,
+        "naive_undercount": 0.0,
+        "bits_per_value": 11.749800317081403,
+        "t_compress": 0.05036522666652369,
+        "t_certify": 0.05399420216675329
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9707875287427538,
+        "naive_overcount": 0.3333333333333333,
+        "naive_undercount": 0.3333333333333333,
+        "bits_per_value": 6.575081530912423,
+        "t_compress": 0.0350665041666313,
+        "t_certify": 0.05332057783319518
+      },
+      {
+        "kind": "synthetic",
+        "method": "SZ3-pwrel",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9681952513941541,
+        "naive_overcount": 0.16666666666666666,
+        "naive_undercount": 0.16666666666666666,
+        "bits_per_value": 6.575081530912423,
+        "t_compress": 0.0350665041666313,
+        "t_certify": 0.05825640600013079
+      },
+      {
+        "kind": "synthetic",
+        "method": "ZFP",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9968847352024922,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 8.860365125868055,
+        "t_compress": 0.015525045666587781,
+        "t_certify": 0.05270682700006546
+      },
+      {
+        "kind": "synthetic",
+        "method": "ZFP",
+        "rel_bound": 0.0001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9912957445527869,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 8.860365125868055,
+        "t_compress": 0.015525045666587781,
+        "t_certify": 0.05305215950003609
+      },
+      {
+        "kind": "synthetic",
+        "method": "ZFP",
+        "rel_bound": 0.001,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9664285468738045,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 5.531500922309028,
+        "t_compress": 0.01295103999988593,
+        "t_certify": 0.05236159116680028
+      },
+      {
+        "kind": "synthetic",
+        "method": "ZFP",
+        "rel_bound": 0.001,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.9746440190347823,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.0,
+        "bits_per_value": 5.531500922309028,
+        "t_compress": 0.01295103999988593,
+        "t_certify": 0.0530988891666766
+      },
+      {
+        "kind": "synthetic",
+        "method": "ZFP",
+        "rel_bound": 0.01,
+        "tau_frac": 0.005,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.7672446701741872,
+        "naive_overcount": 0.5,
+        "naive_undercount": 0.6666666666666666,
+        "bits_per_value": 3.34430233048804,
+        "t_compress": 0.010736449333307974,
+        "t_certify": 0.05208453416662451
+      },
+      {
+        "kind": "synthetic",
+        "method": "ZFP",
+        "rel_bound": 0.01,
+        "tau_frac": 0.02,
+        "runs": 6,
+        "bound_respected": 1.0,
+        "valid": 1.0,
+        "cert_fraction": 0.8180525786753269,
+        "naive_overcount": 0.0,
+        "naive_undercount": 0.16666666666666666,
+        "bits_per_value": 3.34430233048804,
+        "t_compress": 0.010736449333307974,
+        "t_certify": 0.051546016000050564
+      }
+    ]
+  },
+  "validation_warnings": []
+}
