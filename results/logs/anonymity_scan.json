@@ -1,0 +1,10 @@
+{
+  "patterns": [
+    "e-mail address",
+    "home directory",
+    "mounted drive"
+  ],
+  "matches": {},
+  "files": {},
+  "redacted": false
+}

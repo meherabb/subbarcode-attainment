@@ -1,0 +1,93 @@
+{
+  "unit_tests": {
+    "status": "EXECUTED",
+    "reason": "33/33 PASS",
+    "profile": "FULL"
+  },
+  "gkls_objective": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "v3_optimality": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "example20": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "degree1_v4": {
+    "status": "EXECUTED",
+    "reason": "machinery SUPPORTED; planar SUPPORTED; certificates SUPPORTED",
+    "profile": "FULL"
+  },
+  "theorem_c": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "prop_g": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "degree1_fast": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "theorem13": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "middle_degrees": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "grid3d": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "P2_scaling": {
+    "status": "EXECUTED",
+    "reason": "NOT SUPPORTED (full frozen range)",
+    "profile": "FULL",
+    "skipped_sizes": []
+  },
+  "scaling_v2": {
+    "status": "EXECUTED",
+    "reason": "post hoc; skipped []",
+    "profile": "FULL"
+  },
+  "p2_memory_hierarchy": {
+    "status": "EXECUTED",
+    "reason": "post hoc",
+    "profile": "FULL"
+  },
+  "compression_synthetic": {
+    "status": "EXECUTED",
+    "reason": "4 2-D + 2 3-D fields",
+    "profile": "FULL"
+  },
+  "real_compression": {
+    "status": "EXECUTED",
+    "reason": "SDRBench datasets executed: ['CESM-ATM', 'Hurricane-ISABEL-Pf']",
+    "profile": "FULL"
+  },
+  "compression_uniform_baseline": {
+    "status": "EXECUTED",
+    "reason": "SUPPORTED",
+    "profile": "FULL"
+  },
+  "figures": {
+    "status": "EXECUTED",
+    "reason": "return code 0",
+    "profile": "FULL"
+  }
+}

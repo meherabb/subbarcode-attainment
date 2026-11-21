@@ -1,0 +1,678 @@
+
+===== session start 2026-11-20 11:36:42 UTC | profile FULL =====
+profile: FULL | config hash: 8f4b785c7a4a | results folder: results
+PASS  T01 persistence known answer  
+PASS  T02 Prop.3(b) example: T_1=3, N_1=3, max rank=2  (3, 3, 2)
+PASS  T03 staircase: T=K+1, max rank=2 (K=1..8)  
+PASS  T04 comb: T_0.5 = 1 (K=2..20)  
+PASS  T05 nested forest: T_1 = D+1 (D=1..14)  
+PASS  T06 degenerate box: T = N_tau(f)  mismatches=0/500
+PASS  T07 symmetric-box identity (B2 = B3)  mismatches=0/500
+PASS  T08 GST14 mandatory minima = T_0  mismatches=0/1000
+PASS  T09 Cor.2 monotone tau_x  violations=0/500
+PASS  T09 Cor.2 interval formula = recomputation  mismatches=0/500
+PASS  T10 CSR kernel = grid kernel (T and f*)  mismatches=0/180
+PASS  T10b CSR persistence = grid persistence  mismatches=0/180
+PASS  T11 numba = exact rational reference (T and f*)  mismatches=0/200
+PASS  T12 invariance (shift, scale, relabel)  violations=0/300
+PASS  T13 monotonicity (box inclusion, tau)  violations=0/300
+PASS  T14 rank certificate sweep = brute force  mismatches=0/400
+PASS  T14 rank certificate <= T (Prop.3 direction)  violations=0/400
+PASS  T15 priority-flood consistency  violations=0/100
+PASS  T16 A1 violation (ell>u) is rejected  
+PASS  T17 forced quadrants populated for f in B (Lemma 1 map and matching)  failures=0/900
+PASS  T18 post-filter ablation <= T, exact on staircases  violations=0/308
+PASS  T19 exact predicate a+b<c = rational arithmetic (near-ties)  mismatches=0/20000 (rounded test: 3101)
+PASS  T20 N_0(f) = #minimal plateaus  mismatches=0/1000
+PASS  T21 max rank = max_s #minimal(U_s) (forest characterisation)  mismatches=0/1000
+PASS  T22 window lemma  violations=0/1000
+PASS  T23 N-D grid kernels = CSR (2-D and 3-D)  mismatches=0
+PASS  T24 relabelled sweep = original kernel  mismatches=0/80
+PASS  T25 #image bars longer than tau = T_tau  mismatches=0
+PASS  T26 Bar0(f_U) = image barcode and f_U in the box  failures=0/600
+PASS  T27 N_tau(f_U) = T_tau for every tau  mismatches=0
+PASS  T28 image barcode is a sub-barcode of every sampled f (reproduced)  violations=0/1800
+PASS  T29 greedy sub-barcode matching is maximum  mismatches=0/2000
+PASS  T30 wider box gives a sub-barcode (monotonicity)  violations=0/500
+[STATUS] unit_tests: EXECUTED — 33/33 PASS
+tau = 0 imprecise-terrain objective: {'instances': 500, 'matches': 500} SUPPORTED
+[STATUS] gkls_objective: EXECUTED — SUPPORTED
+             in_box  equal  all_tau
+kind                               
+graph           1.0    1.0      1.0
+graph_float     1.0    1.0      1.0
+grid            1.0    1.0      1.0
+path            1.0    1.0      1.0
+optimality: {'instances': 100000, 'in_box': 100000, 'equal': 100000, 'all_tau': 100000, 'validity_violations': 0, 'corner_bad': 0, 'elder_share': 0.6291153234286947, 'region_checks': 7000, 'region_equal': 7000} | SUPPORTED | sub-barcode validity (reproduced): SUPPORTED
+[STATUS] v3_optimality: EXECUTED — SUPPORTED
+self-checks: {'zoo_ok': True, 'rank_vs_reduction_mismatch': 0, 'image0_vs_sweep_mismatch': 0, 'negative_multiplicity': 0}
+exact machinery self-checks: {'instances': 400, 'deg0_not_attained': 0, 'deg0_region_mismatches': 0, 'lower_bound_violations': 0, 'indep_checked': 60, 'indep_order_mismatches': 0, 'indep_decision_mismatches': 0}
+Lemma 16 (KC vertices): {'complexes': 1500, 'functions': 6000, 'kc_free_complexes': 839, 'mv_violations': 0, 'lemma_violations': 0, 'positive_control_events': 283}
+                     family  instances  max_vertices  theorem_witness  plain_dual  validity
+                    annulus        300            26              1.0       0.930       1.0
+                       disk        300            26              1.0       1.000       1.0
+full subcomplex of a sphere        300            25              1.0       0.827       1.0
+                     sphere        300            26              1.0       1.000       1.0
+        sphere with 3 holes        300            26              1.0       0.817       1.0
+Theorem 8 (planar complexes): {'instances': 1500, 'theorem_failures': 0, 'validity_violations': 0}
+certificate A: V=6 T=5 betti=(1, 1, 0) KC=[0] max edge degree 2 surface=False | I1=[(2.0, 5.0), (7.0, inf)] (as predicted: True) | attained=False (1 order types) | count gaps at tau [] | quadrant gaps 1/169 | locally minimal True
+certificate B: V=6 T=6 betti=(1, 0, 0) KC=[0] max edge degree 3 surface=False | I1=[(2.0, 5.0), (7.0, 10.0)] (as predicted: True) | attained=False (1 order types) | count gaps at tau [3.0, 3.25, 3.5, 3.99] | quadrant gaps 1/169 | locally minimal True
+certificate C: V=6 T=7 betti=(1, 1, 0) KC=[] max edge degree 3 surface=False | I1=[(2.0, 3.0), (4.0, inf)] (as predicted: True) | attained=False (6 order types) | count gaps at tau [] | quadrant gaps 1/121 | locally minimal True
+certificate D: V=6 T=9 betti=(1, 1, 0) KC=[] max edge degree 2 surface=True | I1=[(0.0, 2.0), (3.0, inf)] (as predicted: True) | attained=False (13 order types) | count gaps at tau [] | quadrant gaps 1/81 | locally minimal True
+certificate E: V=7 T=13 betti=(1, 2, 0) KC=[] max edge degree 2 surface=True | I1=[(1.0, inf), (2.0, 4.0), (5.0, inf)] (as predicted: True) | attained=False (13 order types) | count gaps at tau [] | quadrant gaps 1/225 | locally minimal True
+certificate F: V=7 T=20 betti=(1, 0, 7) KC=[] max edge degree 5 surface=False | I1=[(4.0, 6.0), (8.0, 11.0)] (as predicted: True) | attained=False (6 order types) | count gaps at tau [3.0, 3.25] | quadrant gaps 1/169 | locally minimal None
+                                     surface  nv  ntri     betti  chi  closed_surface  orientable                                      I1  n_orders  complete  attained
+                             RP^2 (D + cone)   7    12 (1, 1, 1)    1            True       False                           [0,2) [3,inf)        13      True     False
+                            torus (E + cone)   8    16 (1, 2, 1)    0            True        True                   [1,inf) [2,4) [5,inf)        13      True     False
+             Klein bottle (D + Moebius band)   9    18 (1, 2, 1)    0            True       False                   [0,2) [3,inf) [7,inf)        13      True     False
+               genus 2 (E + punctured torus)  11    26 (1, 4, 1)   -2            True        True [1,inf) [2,4) [5,inf) [10,inf) [10,inf)        13      True     False
+non-orientable genus 3 (D + punctured torus)  10    22 (1, 3, 1)   -1            True       False           [0,2) [3,inf) [7,inf) [7,inf)        13      True     False
+Example 20: {'kc_vertices': [], 'max_edge_degree': 5, 'image_barcode': '[4,6) [8,11)', 'matches_prediction': True, 'order_types': 6, 'complete': True, 'min_count_vs_image': {2.0: [1, 1], 2.5: [1, 1], 3.0: [1, 0], 3.25: [1, 0], 3.49: [1, 0], 3.5: [0, 0], 4.0: [0, 0]}, 'count_gap_taus': [3.0, 3.25, 3.49], 'grid_points': 425, 'grid_min_longest': 3.5, 'grid_argmin': [[7.5, 7.5]], 'bound_holds_on_grid': True, 'barcode_attained': False} SUPPORTED
+[STATUS] example20: EXECUTED — SUPPORTED
+census random: 3000 instances (191s)
+census sphere: 400 instances (5s)
+census disk: 400 instances (1s)
+census annulus: 400 instances (9s)
+census projective plane: 400 instances (6s)
+census torus: 400 instances (12s)
+census Klein bottle: 400 instances (9s)
+census Moebius band: 400 instances (5s)
+census punctured torus: 400 instances (7s)
+census punctured Klein bottle: 400 instances (94s)
+census pinched sphere: 200 instances (5s)
+                design                                 cls  instances  max_vertices  proved_not_attained  undecided  witness_failed  count_gaps  share_not_attained
+                sphere                      planar surface        400             8                    0          0               0           0               0.000
+                  disk                      planar surface        400             8                    0          0               0           0               0.000
+               annulus                      planar surface        400             9                    0          0               0           0               0.000
+      projective plane                  non-planar surface        400             7                    3          0               0           0               0.008
+                 torus                  non-planar surface        400             9                    0          0               0           0               0.000
+          Klein bottle                  non-planar surface        400             9                    0          0               0           0               0.000
+          Moebius band                  non-planar surface        400             9                    7          0               0           0               0.018
+       punctured torus                  non-planar surface        400             7                   22          0               0           0               0.055
+punctured Klein bottle                  non-planar surface        400             9                   16          0               0           0               0.040
+                random                           KC vertex       1990             8                  559          0               0           9               0.281
+                random cycle-or-paths links, not a surface         51             8                    0          0               0           0               0.000
+                random            non-manifold edge, no KC        588             8                    0          0               0           0               0.000
+                random                  non-planar surface         69             8                    0          0               0           0               0.000
+                random                      planar surface        302             8                    0          0               0           0               0.000
+        pinched sphere    pinched sphere (KC pinch vertex)        200            24                  105          0               0           0               0.525
+census: {'instances': 6800, 'planar_instances': 1502, 'planar_not_attained': 0, 'nonplanar_surface_not_attained': 48, 'kc_not_attained': 559, 'nonmanifold_not_attained': 0, 'undecided': 0, 'witness_failures': 0, 'count_gaps_total': 9, 'count_gaps_without_kc': 0, 'pinched': 200, 'pinched_not_attained': 105, 'pinch_kc': 200, 'unpinched': 199, 'unpinched_not_attained': 0}
+                method       status  instances
+exhaustive enumeration NOT attained        607
+exhaustive enumeration     attained        502
+ one-free-vertex sweep NOT attained        105
+ one-free-vertex sweep     attained         95
+  verified witness f_D     attained       5437
+  verified witness f_U     attained         54
+method                  exhaustive enumeration  one-free-vertex sweep  verified witness f_D  verified witness f_U
+design                                                                                                           
+Klein bottle                                 0                      0                   400                     0
+Moebius band                                 7                      0                   393                     0
+annulus                                     37                      0                   363                     0
+disk                                         0                      0                   400                     0
+pinched sphere                               0                    200                     0                     0
+projective plane                            12                      0                   388                     0
+punctured Klein bottle                      16                      0                   384                     0
+punctured torus                             22                      0                   378                     0
+random                                    1015                      0                  1931                    54
+sphere                                       0                      0                   400                     0
+torus                                        0                      0                   400                     0
+census decision methods: {'instances': 6800, 'witness_fD': 5437, 'witness_fU': 54, 'exhaustive_attained': 502, 'exhaustive_not_attained': 607, 'sweep_attained': 95, 'sweep_not_attained': 105, 'witness': 5491, 'exhaustive': 1109, 'sweep': 200, 'reconciles': True}
+degree 1 verdicts | machinery: SUPPORTED | Lemma 16 (KC): SUPPORTED | Theorem 8 (planar): SUPPORTED | certificates A-F and transfers (Theorem 11, Examples 17-20): SUPPORTED | count gaps without a KC vertex in the census: 0; counts are attained on every surface (Theorem 10), and Example 20 (certificate F) is a KC-free 2-complex whose counts are not attained
+[STATUS] degree1_v4: EXECUTED — machinery SUPPORTED; planar SUPPORTED; certificates SUPPORTED
+                family  instances  max_vertices  bhat  closed  in_box  finite_equal  essential_count_equal  max_mismatch  counts_equal  fast_equal_exact  barcode_attained_by_fD
+     RP^2 (7 vertices)        400             7     1    True     1.0           1.0                    1.0             1           1.0               1.0                   0.930
+             torus 3x3        400             9     2    True     1.0           1.0                    1.0             2           1.0               1.0                   0.915
+             torus 4x4        400            16     2    True     1.0           1.0                    1.0             2           1.0               1.0                   0.982
+             torus 3x5        400            15     2    True     1.0           1.0                    1.0             2           1.0               1.0                   0.940
+      Klein bottle 3x3        400             9     2    True     1.0           1.0                    1.0             2           1.0               1.0                   0.905
+      Klein bottle 4x4        400            16     2    True     1.0           1.0                    1.0             2           1.0               1.0                   0.968
+    Klein bottle (D+D)        400             9     2    True     1.0           1.0                    1.0             2           1.0               1.0                   0.878
+         genus 2 (E+E)        400            11     4    True     1.0           1.0                    1.0             3           1.0               1.0                   0.835
+              N3 (D+E)        400            10     3    True     1.0           1.0                    1.0             3           1.0               1.0                   0.865
+   Moebius band (6 v.)        400             6     1   False     1.0           1.0                    1.0             1           1.0               1.0                   0.992
+   Moebius band (grid)        400             9     1   False     1.0           1.0                    1.0             1           1.0               1.0                   0.992
+punctured torus (7 v.)        400             7     2   False     1.0           1.0                    1.0             1           1.0               1.0                   0.992
+   punctured torus 4x4        400            16     2   False     1.0           1.0                    1.0             1           1.0               1.0                   0.988
+punctured Klein bottle        400             9     2   False     1.0           1.0                    1.0             1           1.0               1.0                   0.988
+  torus with two holes        400            16     2   False     1.0           1.0                    1.0             1           1.0               1.0                   0.998
+                  disk        400            12     0   False     1.0           1.0                    1.0             0           1.0               1.0                   1.000
+               annulus        399            12     0   False     1.0           1.0                    1.0             0           1.0               1.0                   1.000
+                sphere        400            12     0    True     1.0           1.0                    1.0             0           1.0               1.0                   1.000
+Theorem 10 (surfaces): {'instances': 7199, 'families': 18, 'max_vertices': 16, 'failures': 0, 'fast_mismatches': 0, 'planar_barcode_failures': 0, 'nonplanar_barcode_defects': 333, 'census_not_attained_rechecked': 48, 'census_recheck_failures': 0} SUPPORTED
+[STATUS] theorem_c: EXECUTED — SUPPORTED
+  kind  instances  mean_bars  attained_by_u
+  K3,3        200      4.000            1.0
+    K5        200      6.000            1.0
+random        200      8.035            1.0
+Proposition 15 (graphs): {'instances': 600, 'failures': 0, 'nonplanar_instances': 400, 'with_bars': 587} SUPPORTED
+[STATUS] prop_g: EXECUTED — SUPPORTED
+degree-1 certificate, terrain n=10000: done
+degree-1 certificate, terrain n=40000: done
+degree-1 certificate, terrain n=160000: done
+degree-1 certificate, terrain n=640000: done
+degree-1 certificate, terrain n=2560000: done
+degree-1 certificate, torus n=10000: done
+degree-1 certificate, torus n=40000: done
+degree-1 certificate, torus n=160000: done
+degree-1 certificate, torus n=640000: done
+degree-1 certificate, torus n=2560000: done
+   kind   n agree  t_fast  t_exact   bars
+terrain  16   1.0  0.0003   0.0053 0.0000
+terrain  25   1.0  0.0003   0.0224 0.6667
+terrain  36   1.0  0.0004   0.0793 0.3333
+terrain  49   1.0  0.0004   0.1665 0.6667
+terrain  64   1.0  0.0005   0.4050 1.3333
+terrain  81   1.0  0.0005   0.9134 2.3333
+terrain 100   1.0  0.0005   1.9388 2.6667
+  torus  16   1.0  0.0003   0.0097 2.0000
+  torus  25   1.0  0.0003   0.0367 2.0000
+  torus  36   1.0  0.0004   0.1092 2.6667
+  torus  49   1.0  0.0004   0.2953 2.3333
+  torus  64   1.0  0.0005   0.6162 3.3333
+  torus  81   1.0  0.0005   1.2789 5.0000
+  torus 100   1.0  0.0006   2.6641 5.3333
+   kind     n  bars  finite_bars agree barcode_equal in_box  t_lowerstar
+terrain   400   1.0          1.0  True          True   True        0.012
+terrain  1600   4.0          4.0  True          True   True        0.058
+terrain  3600  11.0         11.0  True          True   True        0.148
+terrain  6400  18.0         18.0  True          True   True        0.448
+terrain 10000  31.0         31.0  True          True   True        0.684
+  torus   400   2.0          0.0  True          True   True        0.015
+  torus  1600   5.0          3.0  True          True   True        0.071
+  torus  3600  13.0         11.0  True          True   True        0.310
+  torus  6400  22.0         20.0  True          True   True        0.586
+  torus 10000  35.0         33.0  True          True   True        0.939
+   kind       n  t_build  t_finite  t_global  t_total  t_witness  finite_bars  global_bars in_box  reps
+terrain   10000   0.0073    0.0020    0.0070   0.0089     0.0001         27.0          0.0    1.0     3
+terrain   40000   0.0276    0.0085    0.0282   0.0364     0.0003        133.0          0.0    1.0     3
+terrain  160000   0.1394    0.0428    0.1303   0.1757     0.0020        536.0          0.0    1.0     3
+terrain  640000   0.5899    0.2405    0.6509   0.8914     0.0124       2117.0          0.0    1.0     3
+terrain 2560000   2.9389    1.6449    3.5179   5.1531     0.0619       8572.0          0.0    1.0     3
+  torus   10000   0.0044    0.0021    0.0068   0.0089     0.0001         34.0          2.0    1.0     3
+  torus   40000   0.0156    0.0087    0.0276   0.0364     0.0003        134.0          2.0    1.0     3
+  torus  160000   0.0618    0.0440    0.1306   0.1757     0.0020        546.0          2.0    1.0     3
+  torus  640000   0.3224    0.2179    0.6550   0.8729     0.0126       2156.0          2.0    1.0     3
+  torus 2560000   1.5619    1.6221    3.5107   5.1338     0.0578       8641.0          2.0    1.0     3
+Corollary 14 (near-linear degree 1): {'exact_checks': 42, 'exact_agree': 42, 'exact_max_n': 100, 'exact_max_seconds': 2.7711360990000458, 'fast_seconds_at_exact_max': 0.0006901059999790959, 'witness_checks': 10, 'witness_agree': 10, 'witness_in_box': 10, 'witness_max_n': 10000, 'max_n': 2560000, 'seconds_at_max_n': {'terrain': 5.153123286999971, 'torus': 5.133836790000032}, 'slope_terrain': 1.1482421171575277, 'slope_torus': 1.1458507778105902, 'timing_in_box': True, 'torus_global_bars': 2} SUPPORTED
+[STATUS] degree1_fast: EXECUTED — SUPPORTED
+main      decide     mobius boxes=  400 seed=  11: seconds=0.51, finite_equal=400, fD_attains=393, fD fails -> NOT attained=7, instances=400
+main      decide     rp2    boxes=  300 seed=  12: seconds=2.98, finite_equal=300, fD_attains=255, fD fails -> attained | peak witness found=45, instances=300
+main      decide     ptorus boxes=  200 seed=  21: seconds=1.18, finite_equal=200, fD_attains=193, fD fails -> NOT attained=7, instances=200
+main      decide     torus  boxes=  200 seed=  22: seconds=14.92, finite_equal=200, fD_attains=156, fD fails -> attained | peak witness found=44, instances=200
+main      max        mobius boxes=  150 seed=  32: seconds=3.63, attaining_max_realisations=2745, attained_instances=148, fD_attains=148, agree(attained <-> fD attains)=150, instances=150, max_excess_over_fD=0.0
+main      max        ptorus boxes=   60 seed=  31: seconds=4.21, attaining_max_realisations=1285, attained_instances=59, fD_attains=59, agree(attained <-> fD attains)=60, instances=60, max_excess_over_fD=0.0
+main      max_closed rp2    boxes=  150 seed=  41: seconds=3.46, attaining_max_realisations=3930, max_above_Lstar=3207, attained_instances=150, instances=150
+main      max_closed torus  boxes=   60 seed=  42: seconds=5.03, attaining_max_realisations=2316, max_above_Lstar=1923, attained_instances=60, instances=60
+extended  decide     mobius boxes= 4000 seed= 111: seconds=4.81, finite_equal=4000, fD_attains=3962, fD fails -> NOT attained=38, instances=4000
+extended  decide     rp2    boxes= 3000 seed= 112: seconds=25.85, finite_equal=3000, fD_attains=2553, fD fails -> attained | peak witness found=447, instances=3000
+extended  decide     ptorus boxes= 2000 seed= 121: seconds=11.15, finite_equal=2000, fD_attains=1940, fD fails -> NOT attained=60, instances=2000
+extended  decide     torus  boxes= 2000 seed= 122: seconds=74.3, finite_equal=2000, fD_attains=1543, fD fails -> attained | peak witness found=457, instances=2000
+extended  max        mobius boxes= 1500 seed= 132: seconds=30.54, attaining_max_realisations=27512, attained_instances=1477, fD_attains=1477, agree(attained <-> fD attains)=1500, instances=1500, max_excess_over_fD=0.0
+extended  max        ptorus boxes=  600 seed= 131: seconds=47.76, attaining_max_realisations=13819, attained_instances=591, fD_attains=591, agree(attained <-> fD attains)=600, instances=600, max_excess_over_fD=0.0
+extended  max_closed rp2    boxes= 1500 seed= 141: seconds=36.02, attaining_max_realisations=39141, max_above_Lstar=33559, attained_instances=1500, instances=1500
+extended  max_closed torus  boxes=  600 seed= 142: seconds=51.83, attaining_max_realisations=21086, max_above_Lstar=18166, attained_instances=600, instances=600
+      run      check surface  boxes  seed  fD_attains  fD fails -> NOT attained  fD fails -> attained | peak witness found  attaining_max_realisations  attained_instances  agree(attained <-> fD attains)  max_above_Lstar matches_reference  consistent_with_theorem  seconds
+reference     decide  mobius    400    11       393.0                       7.0                                        NaN                         NaN                 NaN                             NaN              NaN              True                     True     0.51
+reference     decide     rp2    300    12       255.0                       NaN                                       45.0                         NaN                 NaN                             NaN              NaN              True                     True     2.98
+reference     decide  ptorus    200    21       193.0                       7.0                                        NaN                         NaN                 NaN                             NaN              NaN              True                     True     1.18
+reference     decide   torus    200    22       156.0                       NaN                                       44.0                         NaN                 NaN                             NaN              NaN              True                     True    14.92
+reference        max  mobius    150    32       148.0                       NaN                                        NaN                      2745.0               148.0                           150.0              NaN              True                     True     3.63
+reference        max  ptorus     60    31        59.0                       NaN                                        NaN                      1285.0                59.0                            60.0              NaN              True                     True     4.21
+reference max_closed     rp2    150    41         NaN                       NaN                                        NaN                      3930.0               150.0                             NaN           3207.0              True                     True     3.46
+reference max_closed   torus     60    42         NaN                       NaN                                        NaN                      2316.0                60.0                             NaN           1923.0              True                     True     5.03
+ extended     decide  mobius   4000   111      3962.0                      38.0                                        NaN                         NaN                 NaN                             NaN              NaN              None                     True     4.81
+ extended     decide     rp2   3000   112      2553.0                       NaN                                      447.0                         NaN                 NaN                             NaN              NaN              None                     True    25.85
+ extended     decide  ptorus   2000   121      1940.0                      60.0                                        NaN                         NaN                 NaN                             NaN              NaN              None                     True    11.15
+ extended     decide   torus   2000   122      1543.0                       NaN                                      457.0                         NaN                 NaN                             NaN              NaN              None                     True    74.30
+ extended        max  mobius   1500   132      1477.0                       NaN                                        NaN                     27512.0              1477.0                          1500.0              NaN              None                     True    30.54
+ extended        max  ptorus    600   131       591.0                       NaN                                        NaN                     13819.0               591.0                           600.0              NaN              None                     True    47.76
+ extended max_closed     rp2   1500   141         NaN                       NaN                                        NaN                     39141.0              1500.0                             NaN          33559.0              None                     True    36.02
+ extended max_closed   torus    600   142         NaN                       NaN                                        NaN                     21086.0               600.0                             NaN          18166.0              None                     True    51.83
+Theorem 13 and Lemma 12: {'runs': 16, 'boxes': 16720, 'inconsistent': 0, 'reference_runs': 8, 'reference_matches': 8, 'attaining_representatives': 111834} SUPPORTED
+[STATUS] theorem13: EXECUTED — SUPPORTED
+general-degree self-checks: {'instances': 60, 'bars_mismatch': 0, 'image_mismatch': 0, 'merged_order_mismatch': 0, 'sphere_betti_ok': True}
+Moebius band (Thm 11) in S^3       d=3 k=1 | 24 vertices, 72 facets, Z2 Betti [1, 0, 0, 1] | image barcode [0,2) [3,5) | order_types=13, complete=True, attained=False
+Moebius band (Thm 11) in B^3       d=3 k=1 | 23 vertices, 66 facets, Z2 Betti [1, 0, 0, 0] | image barcode [0,2) [3,5) | order_types=13, complete=True, attained=False
+Example 18 in S^3 (counts)         d=3 k=1 | 31 vertices, 112 facets, Z2 Betti [1, 0, 0, 1] | image barcode [2,5) [7,10) | order_types=1, complete=True, count_gap_taus=[3.0, 3.5, 3.99], min_count_vs_image={3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}
+Moebius band, suspended            d=4 k=2 | 26 vertices, 144 facets, Z2 Betti [1, 0, 0, 0, 1] | image barcode [0,2) [3,5) | order_types=13, complete=True, attained=False
+Example 18, suspended (counts)     d=4 k=2 | 33 vertices, 224 facets, Z2 Betti [1, 0, 0, 0, 1] | image barcode [2,5) [7,10) | order_types=1, complete=True, count_gap_taus=[3.0, 3.5, 3.99], min_count_vs_image={3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}
+Moebius band, joined with S^0      d=4 k=1 | 26 vertices, 144 facets, Z2 Betti [1, 0, 0, 0, 1] | image barcode [0,2) [3,5) | order_types=13, complete=True, attained=False
+Example 18, joined with S^0 (counts) d=4 k=1 | 33 vertices, 224 facets, Z2 Betti [1, 0, 0, 0, 1] | image barcode [2,5) [7,10) | order_types=1, complete=True, count_gap_taus=[3.0, 3.5, 3.99], min_count_vs_image={3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}
+middle degrees: {'cases': 7, 'spheres_and_ball_ok': True, 'barcode_not_attained_all': True, 'count_gaps_all': True, 'lifts_consistent': True, 'moebius_s3_vertices': 24, 'moebius_s3_order_types': 13, 'ex18_s3_vertices': 31, 'ex18_min_longest_bar': 4.0, 'seconds': 0.6} SUPPORTED
+[STATUS] middle_degrees: EXECUTED — SUPPORTED
+grid 3x3x3: 100 boxes in 4s
+grid 3x3x4: 100 boxes in 7s
+grid 4x4x4: 100 boxes in 27s
+grid 4x4x5: 100 boxes in 42s
+grid 5x5x5: 100 boxes in 121s
+shape   n  boxes  mean_image_bars  in_box  sphere_fD_attains  ball_restricted_fD_attains  ball_own_fD_attains
+3x3x3  27    100             0.21     100                100                         100                  100
+3x3x4  36    100             0.40     100                100                         100                  100
+4x4x4  64    100             0.50     100                100                         100                  100
+4x4x5  80    100             0.60     100                100                         100                  100
+5x5x5 125    100             0.72     100                100                         100                  100
+Theorem 8 with d = 3, degree 2: {'boxes': 500, 'shapes': 5, 'theorem_failures': 0, 'not_in_box': 0, 'ball_own_fD_failures': 0, 'padding_lemma_failures': 0, 'boxes_with_image_bars': 216}
+census 2x3x3/free1: 200 boxes (1s)
+census 2x3x3/free2: 200 boxes (2s)
+census 2x3x3/free4: 200 boxes (2s)
+census 2x3x3/free6: 200 boxes (14s)
+census 3x3x3/free1: 200 boxes (2s)
+census 3x3x3/free2: 200 boxes (2s)
+census 3x3x3/free4: 200 boxes (7s)
+census 3x3x3/free6: 200 boxes (114s)
+census 3x3x4/free2: 200 boxes (2s)
+census 3x3x4/free4: 200 boxes (7s)
+shape  free  n  boxes  by_witness  by_enumeration  not_attained  count_gaps  undecided
+2x3x3     1 18    200         200               0             0           0          0
+2x3x3     2 18    200         197               3             0           0          0
+2x3x3     4 18    200         192               8             0           0          0
+2x3x3     6 18    200         179              21             0           0          0
+3x3x3     1 27    200         198               2             0           0          0
+3x3x3     2 27    200         195               5             0           0          0
+3x3x3     4 27    200         186              14             0           0          0
+3x3x3     6 27    200         172              28             0           0          0
+3x3x4     2 36    200         191               9             0           0          0
+3x3x4     4 36    200         180              20             0           0          0
+3-D degree-1 census: {'boxes': 2000, 'not_attained': 0, 'undecided': 0, 'witness_failures': 0, 'count_gaps': 0, 'decided_by_witness': 1890}
+[STATUS] grid3d: EXECUTED — SUPPORTED
+n=     10000  median total 0.002s  ops/n 3.654
+n=     29929  median total 0.006s  ops/n 3.643
+n=     99856  median total 0.024s  ops/n 3.752
+n=    299756  median total 0.079s  ops/n 3.778
+n=   1000000  median total 0.413s  ops/n 3.821
+n=   2999824  median total 1.752s  ops/n 3.842
+n=  10001406  median total 7.691s  ops/n 3.849
+n=  19998784  median total 17.129s  ops/n 3.842
+n=  49999041  median total 48.677s  ops/n 3.855
+       n   t_total    t_sort   t_sweep  t_topdown         ops  array_bytes
+   10000  0.002021  0.000799  0.000960   0.000052     36537.0    1220000.0
+   29929  0.006471  0.002714  0.003099   0.000144    109031.0    3651338.0
+   99856  0.023849  0.010422  0.011201   0.000544    374653.0   12182432.0
+  299756  0.078598  0.035861  0.034800   0.001976   1132536.0   36570232.0
+ 1000000  0.413039  0.132484  0.247952   0.010844   3820526.0  122000000.0
+ 2999824  1.752204  0.486071  1.145508   0.043148  11524716.0  365978528.0
+10001406  7.691017  2.039266  5.005409   0.319529  38494802.0 1220171532.0
+19998784 17.128812  4.546218 11.167174   0.724764  76841972.0 2439851648.0
+49999041 48.676676 13.295069 31.246925   2.041642 192759696.0 6099883002.0
+log-log slopes: {'t_total': 1.208, 't_sort': 1.141, 't_sweep': 1.257, 't_topdown': 1.285, 't_curve': 1.091, 'ops': 1.007, 'array_bytes': 1.0, 't_total_over_nlogn': 0.132} | verdict: NOT SUPPORTED | full frozen range
+[STATUS] P2_scaling: EXECUTED — NOT SUPPORTED (full frozen range)
+ avg_deg      n       m  t_total       ops
+       2 200000  200000 0.056934  390936.0
+       4 200000  399999 0.064141  646854.0
+       8 200000  799980 0.067099 1030389.0
+      16 200000 1599936 0.085122 1815137.0
+      32 200000 3199750 0.120084 3406976.0
+      64 200000 6398898 0.179659 6602287.0
+   tau  t_total    T
+  0.00 0.415103 9991
+  0.01 0.375964 8506
+  0.10 0.367713 2899
+  1.00 0.381584    1
+ 10.00 0.381988    1
+100.00 0.385560    1
+n=     10000  relabelled total 0.002s  persistence 0.002s
+n=     29929  relabelled total 0.007s  persistence 0.005s
+n=     99856  relabelled total 0.027s  persistence 0.018s
+n=    299756  relabelled total 0.091s  persistence 0.064s
+n=   1000000  relabelled total 0.457s  persistence 0.255s
+n=   2999824  relabelled total 1.734s  persistence 1.010s
+n=  10001406  relabelled total 8.144s  persistence 4.986s
+n=  19998784  relabelled total 18.775s  persistence 11.282s
+n=  49999041  relabelled total 53.732s  persistence 32.501s
+       n  t_total  v2_t_total  v2_t_sweep  t_sweep  pers_total  overhead_original  overhead_relabelled
+   10000   0.0020      0.0023      0.0008   0.0010      0.0015             1.3244               1.4762
+   29929   0.0065      0.0070      0.0024   0.0031      0.0050             1.2888               1.3953
+   99856   0.0238      0.0271      0.0094   0.0112      0.0179             1.3317               1.5153
+  299756   0.0786      0.0914      0.0330   0.0348      0.0639             1.2292               1.4292
+ 1000000   0.4130      0.4571      0.1997   0.2480      0.2547             1.6215               1.7945
+ 2999824   1.7522      1.7335      0.8060   1.1455      1.0105             1.7340               1.7155
+10001406   7.6910      8.1443      4.0047   5.0054      4.9856             1.5427               1.6336
+19998784  17.1288     18.7753      9.2809  11.1672     11.2820             1.5182               1.6642
+49999041  48.6767     53.7318     26.8923  31.2469     32.5011             1.4977               1.6532
+slopes (post hoc): {'v2_t_total': 1.203, 'v2_t_sweep': 1.254, 'v2_t_relabel': 1.2, 'pers_total': 1.182, 'pers_sweep': 1.226} | same certificate as P2: True
+[STATUS] scaling_v2: EXECUTED — post hoc; skipped []
+       n     n_p2  working_set_bytes  in_llc  cert_ns_per_vertex  pers_ns_per_vertex  uf_ops_per_vertex  gather_random_ns  gather_sequential_ns
+   10000    10000            1620000    True             202.108             152.605              3.654             1.319                 1.327
+   30000    29929            4848498    True             216.211             167.758              3.643             1.306                 1.331
+  100000    99856           16176672    True             238.835             179.351              3.752             1.339                 1.348
+  300000   299756           48560472   False             262.206             213.320              3.778             2.133                 1.334
+ 1000000  1000000          162000000   False             413.039             254.720              3.821             2.670                 1.289
+ 3000000  2999824          485971488   False             584.102             336.852              3.842             7.811                 1.472
+10000000 10001406         1620227772   False             768.994             498.488              3.849             9.180                 1.536
+20000000 19998784         3239803008   False             856.493             564.136              3.842            10.349                 1.593
+50000000 49999041         8099844642   False             973.552             650.034              3.855            11.295                 1.670
+memory hierarchy: {'caches': {'L1d': 32768, 'L1i': 32768, 'L2': 1048576, 'L3': 40370176}, 'llc_bytes': 40370176, 'sizes_in_llc': 3, 'sizes_out_llc': 6, 'slope_cert_in': 1.073, 'slope_cert_out': 1.256, 'slope_pers_in': 1.07, 'slope_pers_out': 1.234, 'gather_random_ns_min': 1.306, 'gather_random_ns_max': 11.295, 'uf_ops_per_vertex_range': [3.642988405893949, 3.855267864037632]}
+P2, post hoc diagnosis: SUPPORTED (post hoc): in-cache slope in the pre-registered range; the excess appears out of cache, is shared by plain persistence, and tracks random-access latency | pre-registered verdict unchanged: NOT SUPPORTED
+[STATUS] p2_memory_hierarchy: EXECUTED — post hoc
+[STATUS] compression_synthetic: EXECUTED — 4 2-D + 2 3-D fields
+[STATUS] real_compression: EXECUTED — SDRBench datasets executed: ['CESM-ATM', 'Hurricane-ISABEL-Pf']
+     kind    method  rel_bound  tau_frac  runs  bound_respected  valid  cert_fraction  naive_overcount  naive_undercount  bits_per_value  t_compress  t_certify
+ sdrbench        SZ     0.0001     0.005     5              1.0    1.0         0.9694           3.6000            0.0000          2.3324      0.7020     4.1488
+ sdrbench        SZ     0.0001     0.020     5              1.0    1.0         0.9863           0.0000            0.4000          2.3324      0.7020     4.0781
+ sdrbench        SZ     0.0010     0.005     5              1.0    1.0         0.7489          55.0000            0.0000          0.8633      0.5891     3.9578
+ sdrbench        SZ     0.0010     0.020     5              1.0    1.0         0.8685           1.2000            0.2000          0.8633      0.5891     3.9801
+ sdrbench        SZ     0.0100     0.005     5              1.0    1.0         0.2151        6345.8000            0.0000          0.2234      0.5155     3.5715
+ sdrbench        SZ     0.0100     0.020     5              1.0    1.0         0.4146         186.6000            0.2000          0.2234      0.5155     3.6228
+ sdrbench       SZ3     0.0001     0.005     5              1.0    1.0         0.9701           2.4000            0.8000          2.0043      0.7099     4.1987
+ sdrbench       SZ3     0.0001     0.020     5              1.0    1.0         0.9833           0.0000            1.0000          2.0043      0.7099     4.1442
+ sdrbench       SZ3     0.0010     0.005     5              1.0    1.0         0.7512          62.8000            0.0000          0.5498      0.6246     4.2164
+ sdrbench       SZ3     0.0010     0.020     5              1.0    1.0         0.8636           2.8000            0.0000          0.5498      0.6246     4.1889
+ sdrbench       SZ3     0.0100     0.005     5              1.0    1.0         0.2025        2107.4000            0.0000          0.0786      0.5374     4.1434
+ sdrbench       SZ3     0.0100     0.020     5              1.0    1.0         0.3949         118.6000            0.0000          0.0786      0.5374     3.9911
+ sdrbench SZ3-pwrel     0.0001     0.005     5              1.0    1.0         0.9911           0.0000            2.6000          6.4745      1.6071     4.1192
+ sdrbench SZ3-pwrel     0.0001     0.020     5              1.0    1.0         0.9979           0.2000            0.0000          6.4745      1.6071     4.1727
+ sdrbench SZ3-pwrel     0.0010     0.005     5              1.0    1.0         0.9245          11.0000            0.0000          4.1756      1.2840     4.1346
+ sdrbench SZ3-pwrel     0.0010     0.020     5              1.0    1.0         0.9698           0.6000            0.8000          4.1756      1.2840     4.1993
+ sdrbench SZ3-pwrel     0.0100     0.005     5              1.0    1.0         0.5950         915.4000            0.0000          2.6049      1.1924     4.1594
+ sdrbench SZ3-pwrel     0.0100     0.020     5              1.0    1.0         0.7384          25.4000            1.2000          2.6049      1.1924     4.1649
+ sdrbench       ZFP     0.0001     0.005     5              1.0    1.0         0.9698           0.2000            0.6000          6.6174      0.7183     4.0482
+ sdrbench       ZFP     0.0001     0.020     5              1.0    1.0         0.9862           0.0000            0.0000          6.6174      0.7183     4.0374
+ sdrbench       ZFP     0.0010     0.005     5              1.0    1.0         0.7321           3.4000            0.0000          3.9634      0.5914     3.8116
+ sdrbench       ZFP     0.0010     0.020     5              1.0    1.0         0.8643           0.2000            0.2000          3.9634      0.5914     3.8564
+ sdrbench       ZFP     0.0100     0.005     5              1.0    1.0         0.1767          53.4000            0.6000          2.3074      0.4879     3.2085
+ sdrbench       ZFP     0.0100     0.020     5              1.0    1.0         0.3601           1.6000            0.0000          2.3074      0.4879     3.1724
+synthetic        SZ     0.0001     0.005     6              1.0    1.0         0.9969           0.1667            0.1667          5.4734      0.0132     0.0527
+synthetic        SZ     0.0001     0.020     6              1.0    1.0         0.9934           0.1667            0.1667          5.4734      0.0132     0.0569
+synthetic        SZ     0.0010     0.005     6              1.0    1.0         0.9698           0.1667            0.6667          2.2275      0.0120     0.0513
+synthetic        SZ     0.0010     0.020     6              1.0    1.0         0.9747           0.1667            0.3333          2.2275      0.0120     0.0527
+synthetic        SZ     0.0100     0.005     6              1.0    1.0         0.7667         191.0000            1.3333          1.5228      0.0235     0.0524
+synthetic        SZ     0.0100     0.020     6              1.0    1.0         0.8388           6.3333            0.0000          1.5228      0.0235     0.0538
+synthetic       SZ3     0.0001     0.005     6              1.0    1.0         0.9969           0.0000            0.0000          3.5521      0.0549     0.0519
+synthetic       SZ3     0.0001     0.020     6              1.0    1.0         0.9934           0.1667            0.0000          3.5521      0.0549     0.0531
+synthetic       SZ3     0.0010     0.005     6              1.0    1.0         0.9732           0.3333            0.3333          1.7407      0.0273     0.0540
+synthetic       SZ3     0.0010     0.020     6              1.0    1.0         0.9703           0.1667            0.3333          1.7407      0.0273     0.0538
+synthetic       SZ3     0.0100     0.005     6              1.0    1.0         0.7811          39.3333            0.0000          0.4760      0.0268     0.0557
+synthetic       SZ3     0.0100     0.020     6              1.0    1.0         0.8116           2.5000            0.3333          0.4760      0.0268     0.0565
+synthetic SZ3-pwrel     0.0001     0.005     6              1.0    1.0         1.0000           0.0000            0.0000         19.3581      0.0869     0.0522
+synthetic SZ3-pwrel     0.0001     0.020     6              1.0    1.0         1.0000           0.0000            0.0000         19.3581      0.0869     0.0535
+synthetic SZ3-pwrel     0.0010     0.005     6              1.0    1.0         0.9953           0.1667            0.0000         11.7498      0.0504     0.0519
+synthetic SZ3-pwrel     0.0010     0.020     6              1.0    1.0         0.9915           0.3333            0.0000         11.7498      0.0504     0.0540
+synthetic SZ3-pwrel     0.0100     0.005     6              1.0    1.0         0.9708           0.3333            0.3333          6.5751      0.0351     0.0533
+synthetic SZ3-pwrel     0.0100     0.020     6              1.0    1.0         0.9682           0.1667            0.1667          6.5751      0.0351     0.0583
+synthetic       ZFP     0.0001     0.005     6              1.0    1.0         0.9969           0.0000            0.0000          8.8604      0.0155     0.0527
+synthetic       ZFP     0.0001     0.020     6              1.0    1.0         0.9913           0.0000            0.0000          8.8604      0.0155     0.0531
+synthetic       ZFP     0.0010     0.005     6              1.0    1.0         0.9664           0.0000            0.0000          5.5315      0.0130     0.0524
+synthetic       ZFP     0.0010     0.020     6              1.0    1.0         0.9746           0.0000            0.0000          5.5315      0.0130     0.0531
+synthetic       ZFP     0.0100     0.005     6              1.0    1.0         0.7672           0.5000            0.6667          3.3443      0.0107     0.0521
+synthetic       ZFP     0.0100     0.020     6              1.0    1.0         0.8181           0.0000            0.1667          3.3443      0.0107     0.0515
+compression: {'runs': 264, 'bound_violations': 0, 'valid_given_bound': 264, 'runs_with_bound': 264, 'naive_overcount_runs': 107} SUPPORTED
+     kind  rel_bound  tau_frac  runs    N_true         T  T_uniform  certified_fraction  uniform_fraction
+ sdrbench     0.0001     0.005     5 2055.8000 2036.8000  1997.2000              0.9911            0.9737
+ sdrbench     0.0001     0.020     5  459.0000  456.8000   453.6000              0.9979            0.9880
+ sdrbench     0.0010     0.005     5 2055.8000 1884.8000  1546.2000              0.9245            0.7577
+ sdrbench     0.0010     0.020     5  459.0000  444.2000   411.6000              0.9698            0.8861
+ sdrbench     0.0100     0.005     5 2055.8000 1199.0000   405.8000              0.5950            0.2078
+ sdrbench     0.0100     0.020     5  459.0000  358.4000   200.2000              0.7384            0.3931
+synthetic     0.0001     0.005     6   96.8333   96.8333    96.6667              1.0000            0.9984
+synthetic     0.0001     0.020     6   77.8333   77.8333    77.6667              1.0000            0.9977
+synthetic     0.0010     0.005     6   96.8333   96.3333    94.6667              0.9953            0.9784
+synthetic     0.0010     0.020     6   77.8333   77.1667    76.1667              0.9915            0.9787
+synthetic     0.0100     0.005     6   96.8333   93.8333    81.6667              0.9708            0.8479
+synthetic     0.0100     0.020     6   77.8333   75.3333    68.0000              0.9682            0.8735
+uniform baseline: {'absolute_runs': 198, 'absolute_identity_holds': 198, 'relative_runs': 66, 'relative_T_above_uniform': 52, 'monotonicity_violations': 0, 'relative_mean_T': 530.3636363636364, 'relative_mean_T_uniform': 424.8787878787879, 'relative_mean_N_true': 619.1818181818181}
+counts: {'fields': 11, 'compressions': 132, 'certificate_evaluations': 264, 'sdrbench_evaluations': 120, 'overcount_runs': 107, 'overcount_runs_sdrbench': 72, 'undercount_runs': 36, 'undercount_runs_sdrbench': 17, 'bound_respected': 264, 'valid': 264}
+median certification seconds: {'CESM-ATM:CLDLOW_1_1800_3600.f32': {'n': 6480000, 'median_certify_seconds': 2.683}, 'CESM-ATM:FLDSC_1_1800_3600.f32': {'n': 6480000, 'median_certify_seconds': 2.098}, 'CESM-ATM:ODV_sulf_1_1800_3600.f32': {'n': 6480000, 'median_certify_seconds': 2.344}, 'CESM-ATM:TAUX_1_1800_3600.f32': {'n': 6480000, 'median_certify_seconds': 2.516}, 'Hurricane-ISABEL-Pf:Pf05.f32': {'n': 25000000, 'median_certify_seconds': 10.82}, 'synthetic-2D-0': {'n': 65536, 'median_certify_seconds': 0.013}, 'synthetic-2D-1': {'n': 65536, 'median_certify_seconds': 0.013}, 'synthetic-2D-2': {'n': 65536, 'median_certify_seconds': 0.013}, 'synthetic-2D-3': {'n': 65536, 'median_certify_seconds': 0.013}, 'synthetic-3D-0': {'n': 442368, 'median_certify_seconds': 0.132}, 'synthetic-3D-1': {'n': 442368, 'median_certify_seconds': 0.132}}
+missing (fill) fractions: {'CESM-ATM:CLDLOW_1_1800_3600.f32': 0.0, 'CESM-ATM:FLDSC_1_1800_3600.f32': 0.0, 'CESM-ATM:ODV_sulf_1_1800_3600.f32': 0.09862515432098766, 'CESM-ATM:TAUX_1_1800_3600.f32': 0.0, 'Hurricane-ISABEL-Pf:Pf05.f32': 0.0}
+Figure 3(c): {'sdr_mean_true_bars': 2055.8, 'certified_fraction': {'SZ@0.0001': 0.9694, 'SZ@0.001': 0.7489, 'SZ@0.01': 0.2151, 'SZ3@0.0001': 0.9701, 'SZ3@0.001': 0.7512, 'SZ3@0.01': 0.2025, 'SZ3-pwrel@0.0001': 0.9911, 'SZ3-pwrel@0.001': 0.9245, 'SZ3-pwrel@0.01': 0.595, 'ZFP@0.0001': 0.9698, 'ZFP@0.001': 0.7321, 'ZFP@0.01': 0.1767}, 'naive_excess': {'SZ@0.0001': 3.6, 'SZ@0.001': 55.0, 'SZ@0.01': 6345.8, 'SZ3@0.0001': 1.6, 'SZ3@0.001': 62.8, 'SZ3@0.01': 2107.4, 'SZ3-pwrel@0.0001': -2.6, 'SZ3-pwrel@0.001': 11.0, 'SZ3-pwrel@0.01': 915.4, 'ZFP@0.0001': -0.4, 'ZFP@0.001': 3.4, 'ZFP@0.01': 52.8}}
+[STATUS] compression_uniform_baseline: EXECUTED — SUPPORTED
+validation: no warnings
+exported: ['compression.csv', 'compression_uniform_baseline.csv', 'configuration.json', 'degree1_census.csv', 'degree1_census_instances.csv', 'degree1_census_methods.csv', 'degree1_fast_timing.csv', 'degree1_planar.csv', 'degree1_transfers.csv', 'example20_grid.csv', 'grid3d_degree1_census.csv', 'grid3d_degree2.csv', 'middle_degrees.csv', 'optimality.csv', 'optimality_regions.csv', 'p2_memory_hierarchy.csv', 'results.json', 'scaling.csv', 'theorem13.csv', 'theorem_c.csv']
+exact-agreement runs: 42 all agree: True
+lo [4, 1, 3, 6, 2, 5, 7, 3, 1, 4, 6, 5, 2, 4]
+up [6, 2, 7, 8, 5, 6, 9, 7, 3, 8, 7, 9, 6, 6]
+fU [4, 2, 3, 6, 5, 5, 7, 3, 3, 4, 6, 6, 6, 6]
+bar_l [(1, 7), (1, inf), (2, 6), (2, 6)]
+bar_u [(2, inf), (3, 9), (5, 8), (6, 9), (7, 8)]
+bar_fU [(2, inf), (3, 7), (5, 6)]
+       method  rel_bound        cf       bpv
+0          SZ     0.0001  0.969384  2.332437
+1          SZ     0.0010  0.748852  0.863287
+2          SZ     0.0100  0.215076  0.223446
+3         SZ3     0.0001  0.970083  2.004305
+4         SZ3     0.0010  0.751209  0.549827
+5         SZ3     0.0100  0.202519  0.078584
+6   SZ3-pwrel     0.0001  0.991087  6.474463
+7   SZ3-pwrel     0.0010  0.924451  4.175600
+8   SZ3-pwrel     0.0100  0.594965  2.604941
+9         ZFP     0.0001  0.969760  6.617396
+10        ZFP     0.0010  0.732107  3.963450
+11        ZFP     0.0100  0.176742  2.307393
+
+figures: {'fig1_fU_path.pdf': True, 'fig2_certificate_D.pdf': True, 'fig3_experiments.pdf': True, 'fig4_surface_checks.pdf': True}
+[STATUS] figures: EXECUTED — return code 0
+ rel_bound    method    cf   over   bpv  fields
+     0.000        SZ 0.969    3.6 2.332       5
+     0.000       SZ3 0.970    2.4 2.004       5
+     0.000 SZ3-pwrel 0.991    0.0 6.474       5
+     0.000       ZFP 0.970    0.2 6.617       5
+     0.001        SZ 0.749   55.0 0.863       5
+     0.001       SZ3 0.751   62.8 0.550       5
+     0.001 SZ3-pwrel 0.924   11.0 4.176       5
+     0.001       ZFP 0.732    3.4 3.963       5
+     0.010        SZ 0.215 6345.8 0.223       5
+     0.010       SZ3 0.203 2107.4 0.079       5
+     0.010 SZ3-pwrel 0.595  915.4 2.605       5
+     0.010       ZFP 0.177   53.4 2.307       5
+                                cls  instances  max_vertices  not_attained  count_gaps  undecided                                class
+                     planar surface       1502             9             0           0          0                      planar surfaces
+                 non-planar surface       2469             9            48           0          0                  non-planar surfaces
+                          KC vertex       1990             8           559           9          0         2-complexes with a KC vertex
+           non-manifold edge, no KC        588             8             0           0          0      non-manifold edge, no KC vertex
+cycle-or-paths links, not a surface         51             8             0           0          0 links cycles or paths, not a surface
+   pinched sphere (KC pinch vertex)        200            24           105           0          0    pinched spheres (KC pinch vertex)
+# Numbers for the paper (profile FULL, configuration 8f4b785c7a4a)
+
+## Paper Section 7 and Appendix D: setup and environment
+- session_minutes: 71.7
+- logical_cpus: 4
+- ram_gb: 33.66
+- cpu: "x86_64"
+- python: "3.13.16"
+- numpy: "2.1.3"
+- scipy: "1.16.3"
+- pandas: "2.3.3"
+- numba: "0.61.2"
+- matplotlib: "3.10.0"
+- config_hash: "8f4b785c7a4a"
+- seed: 20260925
+- profile: "FULL"
+- unit_tests_passed: 33
+- unit_tests: 33
+
+## Exact decisions (independent enumeration)
+- instances: 60
+- order_mismatches: 0
+- decision_mismatches: 0
+
+## Degree 0 (Theorem 5, Lemma 2, tau = 0 identities)
+- boxes: 100000
+- in_box: 100000
+- barcode_equal: 100000
+- max_vertices: 225
+- persistence_regions: 3000
+- persistence_regions_equal: 3000
+- quadrants: 4000
+- quadrants_equal: 4000
+- gkls_matches: 500
+- gkls_instances: 500
+- gst14: "mismatches=0/1000"
+
+## Table 2 (census)
+- cls: "planar surfaces"
+- instances: 1502
+- max_vertices: 9
+- not_attained: 0
+- count_gaps: 0
+- undecided: 0
+
+- cls: "non-planar surfaces"
+- instances: 2469
+- max_vertices: 9
+- not_attained: 48
+- count_gaps: 0
+- undecided: 0
+
+- cls: "2-complexes with a KC vertex"
+- instances: 1990
+- max_vertices: 8
+- not_attained: 559
+- count_gaps: 9
+- undecided: 0
+
+- cls: "links cycles or paths, not a surface"
+- instances: 51
+- max_vertices: 8
+- not_attained: 0
+- count_gaps: 0
+- undecided: 0
+
+- cls: "non-manifold edge, no KC vertex"
+- instances: 588
+- max_vertices: 8
+- not_attained: 0
+- count_gaps: 0
+- undecided: 0
+
+- cls: "pinched spheres (KC pinch vertex)"
+- instances: 200
+- max_vertices: 24
+- not_attained: 105
+- count_gaps: 0
+- undecided: 0
+
+
+## Degree 1, census text
+- non_planar_failures: {"Moebius band": "7 of 400", "projective plane": "3 of 400", "punctured Klein bottle": "16 of 400", "punctured torus": "22 of 400"}
+- unpinched_controls_attained: "199 of 199"
+- undecided: 0
+- method_instances: 6800
+- method_witness_fD: 5437
+- method_witness_fU: 54
+- method_exhaustive_attained: 502
+- method_exhaustive_not_attained: 607
+- method_sweep_attained: 95
+- method_sweep_not_attained: 105
+- method_witness: 5491
+- method_exhaustive: 1109
+- method_sweep: 200
+- method_reconciles: true
+
+## Certificates and transfers (Theorem 11, Examples 17-20)
+- A: {"image": "[2,5) [7,inf)", "attained": false, "order_types": 1, "count_gap_taus": [], "locally_minimal": true, "kc": [0]}
+- B: {"image": "[2,5) [7,10)", "attained": false, "order_types": 1, "count_gap_taus": [3.0, 3.25, 3.5, 3.99], "locally_minimal": true, "kc": [0]}
+- C: {"image": "[2,3) [4,inf)", "attained": false, "order_types": 6, "count_gap_taus": [], "locally_minimal": true, "kc": []}
+- D: {"image": "[0,2) [3,inf)", "attained": false, "order_types": 13, "count_gap_taus": [], "locally_minimal": true, "kc": []}
+- E: {"image": "[1,inf) [2,4) [5,inf)", "attained": false, "order_types": 13, "count_gap_taus": [], "locally_minimal": true, "kc": []}
+- F: {"image": "[4,6) [8,11)", "attained": false, "order_types": 6, "count_gap_taus": [3.0, 3.25], "locally_minimal": null, "kc": []}
+- transfers: {"RP^2 (D + cone)": {"attained": false, "order_types": 13}, "torus (E + cone)": {"attained": false, "order_types": 13}, "Klein bottle (D + Moebius band)": {"attained": false, "order_types": 13}, "genus 2 (E + punctured torus)": {"attained": false, "order_types": 13}, "non-orientable genus 3 (D + punctured torus)": {"attained": false, "order_types": 13}}
+
+## Example 20
+- kc_vertices: []
+- max_edge_degree: 5
+- image_barcode: "[4,6) [8,11)"
+- matches_prediction: true
+- order_types: 6
+- complete: true
+- min_count_vs_image: {"2.0": [1, 1], "2.5": [1, 1], "3.0": [1, 0], "3.25": [1, 0], "3.49": [1, 0], "3.5": [0, 0], "4.0": [0, 0]}
+- count_gap_taus: [3.0, 3.25, 3.49]
+- grid_points: 425
+- grid_min_longest: 3.5
+- grid_argmin: [[7.5, 7.5]]
+- bound_holds_on_grid: true
+- barcode_attained: false
+
+## Theorem 8 (planar)
+- boxes: 1500
+- families: 5
+- max_vertices: 26
+- failures: 0
+- fD_on_complex_itself: {"annulus": 93.0, "disk": 100.0, "full subcomplex of a sphere": 82.7, "sphere": 100.0, "sphere with 3 holes": 81.7}
+
+## Theorem 10 and Corollary 14 (surfaces)
+- boxes: 7199
+- families: 18
+- max_vertices: 16
+- max_bhat: 4
+- failures: 0
+- fast_mismatches: 0
+- essential_births_differ: 333
+- planar_barcode_failures: 0
+- max_mismatch: 3
+
+## Theorem 13 and Lemma 12
+- boundary_fD_attains: {"mobius (seed 11)": "393 of 400", "ptorus (seed 21)": "193 of 200"}
+- boundary_proved_unattainable: 14
+- closed_fD_attains: 411
+- closed_boxes: 500
+- closed_attained_by_fp: 89
+- boundary_max_boxes: 210
+- boundary_near_sup_representatives: 4030
+- closed_max_boxes: 210
+- closed_near_sup_representatives: 6246
+- closed_above_Lstar: 5130
+- reference_matches: "8 of 8"
+- inconsistent_runs: 0
+- extended_boxes: 15200
+- extended_inconsistent: 0
+
+## Proposition 15 and Lemma 16
+- graphs: 600
+- graph_failures: 0
+- kc_functions: 6000
+- kc_complexes: 1500
+- kc_entrances_doing_both: 283
+- kc_violations: 0
+
+## Middle degrees (new theorem)
+- cases: 7
+- spheres_and_ball_ok: true
+- barcode_not_attained_all: true
+- count_gaps_all: true
+- lifts_consistent: true
+- moebius_s3_vertices: 24
+- moebius_s3_order_types: 13
+- ex18_s3_vertices: 31
+- ex18_min_longest_bar: 4.0
+- seconds: 0.6
+- rows: [{"case": "Moebius band (Thm 11) in S^3", "d": 3, "k": 1, "vertices": 24, "facets": 72, "betti": "[1, 0, 0, 1]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Moebius band (Thm 11) in B^3", "d": 3, "k": 1, "vertices": 23, "facets": 66, "betti": "[1, 0, 0, 0]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Example 18 in S^3 (counts)", "d": 3, "k": 1, "vertices": 31, "facets": 112, "betti": "[1, 0, 0, 1]", "image_barcode": "[2,5) [7,10)", "order_types": 1, "count_gap_taus": "[3.0, 3.5, 3.99]"}, {"case": "Moebius band, suspended", "d": 4, "k": 2, "vertices": 26, "facets": 144, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Example 18, suspended (counts)", "d": 4, "k": 2, "vertices": 33, "facets": 224, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[2,5) [7,10)", "order_types": 1, "count_gap_taus": "[3.0, 3.5, 3.99]"}, {"case": "Moebius band, joined with S^0", "d": 4, "k": 1, "vertices": 26, "facets": 144, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[0,2) [3,5)", "order_types": 13, "attained": false}, {"case": "Example 18, joined with S^0 (counts)", "d": 4, "k": 1, "vertices": 33, "facets": 224, "betti": "[1, 0, 0, 0, 1]", "image_barcode": "[2,5) [7,10)", "order_types": 1, "count_gap_taus": "[3.0, 3.5, 3.99]"}]
+
+## 3-D grids (Theorem 8 with d = 3; degree-1 census)
+- degree2: {"boxes": 500, "shapes": 5, "theorem_failures": 0, "not_in_box": 0, "ball_own_fD_failures": 0, "padding_lemma_failures": 0, "boxes_with_image_bars": 216}
+- degree1: {"boxes": 2000, "not_attained": 0, "undecided": 0, "witness_failures": 0, "count_gaps": 0, "decided_by_witness": 1890}
+- degree1_by_shape: [{"shape": "2x3x3", "free": 1, "n": 18, "boxes": 200, "by_witness": 200, "by_enumeration": 0, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "2x3x3", "free": 2, "n": 18, "boxes": 200, "by_witness": 197, "by_enumeration": 3, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "2x3x3", "free": 4, "n": 18, "boxes": 200, "by_witness": 192, "by_enumeration": 8, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "2x3x3", "free": 6, "n": 18, "boxes": 200, "by_witness": 179, "by_enumeration": 21, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 1, "n": 27, "boxes": 200, "by_witness": 198, "by_enumeration": 2, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 2, "n": 27, "boxes": 200, "by_witness": 195, "by_enumeration": 5, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 4, "n": 27, "boxes": 200, "by_witness": 186, "by_enumeration": 14, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x3", "free": 6, "n": 27, "boxes": 200, "by_witness": 172, "by_enumeration": 28, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x4", "free": 2, "n": 36, "boxes": 200, "by_witness": 191, "by_enumeration": 9, "not_attained": 0, "count_gaps": 0, "undecided": 0}, {"shape": "3x3x4", "free": 4, "n": 36, "boxes": 200, "by_witness": 180, "by_enumeration": 20, "not_attained": 0, "count_gaps": 0, "undecided": 0}]
+
+## Scaling (Figure 3a,b)
+- sizes: "10,000 to 50,000,000"
+- uf_ops_per_vertex: [3.64, 3.86]
+- ops_loglog_slope: 1.007
+- cert_ns_per_vertex: [202, 974]
+- pers_ns_per_vertex: [153, 650]
+- random_access_ns: [1.3, 11.3]
+- llc_bytes: 40370176
+- array_bytes_per_vertex: 122.0
+- working_set_model_bytes_per_vertex: 162
+- degree1_max_vertices: 2560000
+- degree1_seconds_at_max: {"terrain": 5.2, "torus": 5.1}
+- degree1_exact_grids: 42
+- degree1_exact_agree: 42
+
+## Compression (paper Section 7, Table 3, Appendix D)
+- fields: 11
+- compressions: 132
+- certificate_evaluations: 264
+- sdrbench_evaluations: 120
+- overcount_runs: 107
+- overcount_runs_sdrbench: 72
+- undercount_runs: 36
+- undercount_runs_sdrbench: 17
+- bound_respected: 264
+- valid: 264
+- uniform_baseline: {"absolute_runs": 198, "absolute_identity_holds": 198, "relative_runs": 66, "relative_T_above_uniform": 52, "monotonicity_violations": 0, "relative_mean_T": 530.3636363636364, "relative_mean_T_uniform": 424.8787878787879, "relative_mean_N_true": 619.1818181818181}
+- median_certify_seconds: {"CESM-ATM:CLDLOW_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.683}, "CESM-ATM:FLDSC_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.098}, "CESM-ATM:ODV_sulf_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.344}, "CESM-ATM:TAUX_1_1800_3600.f32": {"n": 6480000, "median_certify_seconds": 2.516}, "Hurricane-ISABEL-Pf:Pf05.f32": {"n": 25000000, "median_certify_seconds": 10.82}, "synthetic-2D-0": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-2D-1": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-2D-2": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-2D-3": {"n": 65536, "median_certify_seconds": 0.013}, "synthetic-3D-0": {"n": 442368, "median_certify_seconds": 0.132}, "synthetic-3D-1": {"n": 442368, "median_certify_seconds": 0.132}}
+- fill_fractions: {"CESM-ATM:CLDLOW_1_1800_3600.f32": 0.0, "CESM-ATM:FLDSC_1_1800_3600.f32": 0.0, "CESM-ATM:ODV_sulf_1_1800_3600.f32": 0.09862515432098766, "CESM-ATM:TAUX_1_1800_3600.f32": 0.0, "Hurricane-ISABEL-Pf:Pf05.f32": 0.0}
+- figure_3c: {"sdr_mean_true_bars": 2055.8, "certified_fraction": {"SZ@0.0001": 0.9694, "SZ@0.001": 0.7489, "SZ@0.01": 0.2151, "SZ3@0.0001": 0.9701, "SZ3@0.001": 0.7512, "SZ3@0.01": 0.2025, "SZ3-pwrel@0.0001": 0.9911, "SZ3-pwrel@0.001": 0.9245, "SZ3-pwrel@0.01": 0.595, "ZFP@0.0001": 0.9698, "ZFP@0.001": 0.7321, "ZFP@0.01": 0.1767}, "naive_excess": {"SZ@0.0001": 3.6, "SZ@0.001": 55.0, "SZ@0.01": 6345.8, "SZ3@0.0001": 1.6, "SZ3@0.001": 62.8, "SZ3@0.01": 2107.4, "SZ3-pwrel@0.0001": -2.6, "SZ3-pwrel@0.001": 11.0, "SZ3-pwrel@0.01": 915.4, "ZFP@0.0001": -0.4, "ZFP@0.001": 3.4, "ZFP@0.01": 52.8}}
+- sdrbench_executed: ["CESM-ATM", "Hurricane-ISABEL-Pf"]
+
+elapsed 71.7 min | 60 result files checksummed | reproducibility: PASS
+anonymity scan: no identifying strings found
