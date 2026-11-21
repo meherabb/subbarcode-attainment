@@ -1,0 +1,63 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      quick:
+        description: "Also run every notebook section at reduced size (QUICK profile)"
+        type: boolean
+        default: false
+
+jobs:
+  check:
+    name: make check (environment of the reported run)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install the pinned environment
+        run: |
+          python -m pip install -r requirements.txt
+          python -m pip install -e . --no-deps
+      - name: Archive, paper numbers, notebook code, tests
+        run: make check
+
+  library:
+    name: library on Python ${{ matrix.python }} (NumPy only)
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install the package with its test dependency
+        run: python -m pip install -e ".[test]"
+      - name: Tests
+        run: python -m pytest
+
+  quick:
+    name: notebook, QUICK profile
+    if: github.event_name == 'workflow_dispatch' && inputs.quick
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: make quick
+      - uses: actions/upload-artifact@v4
+        with:
+          name: quick-run
+          path: runs/quick
