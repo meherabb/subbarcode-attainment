@@ -1,0 +1,52 @@
+{
+  "sdrbench:CESM-ATM:TAUX_1_1800_3600.f32": {
+    "source": "SDRBench raw float32 fields (Zhao et al., IEEE BigData 2020)",
+    "url": "https://sdrbench.github.io/datasets.html",
+    "license": "see SDRBench",
+    "version": "archives on the SDRBench HTTPS host named in CONFIG['compression']",
+    "time": "2026-11-20 12:22:51 UTC",
+    "path": "data/sdrbench/CESM-ATM/TAUX_1_1800_3600.f32",
+    "sha256": "57c11905d32b24eff5911c7f91e5b17c95ec6e26acdaf4ad3724c43b7cdf9ab1",
+    "bytes": 25920000
+  },
+  "sdrbench:CESM-ATM:FLDSC_1_1800_3600.f32": {
+    "source": "SDRBench raw float32 fields (Zhao et al., IEEE BigData 2020)",
+    "url": "https://sdrbench.github.io/datasets.html",
+    "license": "see SDRBench",
+    "version": "archives on the SDRBench HTTPS host named in CONFIG['compression']",
+    "time": "2026-11-20 12:25:47 UTC",
+    "path": "data/sdrbench/CESM-ATM/FLDSC_1_1800_3600.f32",
+    "sha256": "78df3f45a1609910a452b9791a6a338ef7335ffe3d2af67849ce2095cf307927",
+    "bytes": 25920000
+  },
+  "sdrbench:CESM-ATM:CLDLOW_1_1800_3600.f32": {
+    "source": "SDRBench raw float32 fields (Zhao et al., IEEE BigData 2020)",
+    "url": "https://sdrbench.github.io/datasets.html",
+    "license": "see SDRBench",
+    "version": "archives on the SDRBench HTTPS host named in CONFIG['compression']",
+    "time": "2026-11-20 12:28:16 UTC",
+    "path": "data/sdrbench/CESM-ATM/CLDLOW_1_1800_3600.f32",
+    "sha256": "289f9196036e93e129b9c142444c225065740a783ec76877fc2d5b9fa13d0a3e",
+    "bytes": 25920000
+  },
+  "sdrbench:CESM-ATM:ODV_sulf_1_1800_3600.f32": {
+    "source": "SDRBench raw float32 fields (Zhao et al., IEEE BigData 2020)",
+    "url": "https://sdrbench.github.io/datasets.html",
+    "license": "see SDRBench",
+    "version": "archives on the SDRBench HTTPS host named in CONFIG['compression']",
+    "time": "2026-11-20 12:31:26 UTC",
+    "path": "data/sdrbench/CESM-ATM/ODV_sulf_1_1800_3600.f32",
+    "sha256": "d9b39e3ebaaf3f3a06cc67f94e3af82b4e9845ff529b427a32fd555d87b54d8a",
+    "bytes": 25920000
+  },
+  "sdrbench:Hurricane-ISABEL-Pf:Pf05.f32": {
+    "source": "SDRBench raw float32 fields (Zhao et al., IEEE BigData 2020)",
+    "url": "https://sdrbench.github.io/datasets.html",
+    "license": "see SDRBench",
+    "version": "archives on the SDRBench HTTPS host named in CONFIG['compression']",
+    "time": "2026-11-20 12:35:18 UTC",
+    "path": "data/sdrbench/Hurricane-ISABEL-Pf/Pf05.f32",
+    "sha256": "1a5303f403bb00180f2b472e95876834db0d9c7305a575d2a4e8a35662d26b8a",
+    "bytes": 100000000
+  }
+}
