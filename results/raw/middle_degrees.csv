@@ -1,0 +1,8 @@
+case,d,k,construction,vertices,facets,betti,pseudomanifold,free_vertices,image_barcode,order_types,complete,attained,count_gap_taus,min_count_vs_image,min_longest_bar_on_grid,same_image_as_degree_1,suspension_iso_failures,same_image_as_S3
+Moebius band (Thm 11) in S^3,3,1,join of two triangle boundaries + stellar subdivisions + padding,24,72,"[1, 0, 0, 1]",True,3,"[0,2) [3,5)",13,True,False,,,,,,
+Moebius band (Thm 11) in B^3,3,1,"as above, open star of one padding vertex removed",23,66,"[1, 0, 0, 0]",False,3,"[0,2) [3,5)",13,True,False,,,,,,
+Example 18 in S^3 (counts),3,1,join of two triangle boundaries + stellar subdivisions + padding,31,112,"[1, 0, 0, 1]",True,1,"[2,5) [7,10)",1,True,,"[3.0, 3.5, 3.99]","{3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}",4.0,,,
+"Moebius band, suspended",4,2,"suspension, apexes fixed at -1",26,144,"[1, 0, 0, 0, 1]",True,3,"[0,2) [3,5)",13,True,False,,,,True,0.0,
+"Example 18, suspended (counts)",4,2,"suspension, apexes fixed at -1",33,224,"[1, 0, 0, 0, 1]",True,1,"[2,5) [7,10)",1,True,,"[3.0, 3.5, 3.99]","{3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}",,True,,
+"Moebius band, joined with S^0",4,1,join with S^0 fixed at M,26,144,"[1, 0, 0, 0, 1]",True,3,"[0,2) [3,5)",13,True,False,,,,,,True
+"Example 18, joined with S^0 (counts)",4,1,join with S^0 fixed at M,33,224,"[1, 0, 0, 0, 1]",True,1,"[2,5) [7,10)",1,True,,"[3.0, 3.5, 3.99]","{3.0: (1, 0), 3.5: (1, 0), 3.99: (1, 0)}",,,,True

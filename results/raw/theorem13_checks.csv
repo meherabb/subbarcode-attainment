@@ -1,0 +1,17 @@
+check,surface,boxes,seed,seconds,notes,finite_equal,fD_attains,fD fails -> NOT attained,instances,run,fD fails -> attained | peak witness found,attaining_max_realisations,attained_instances,agree(attained <-> fD attains),max_excess_over_fD,max_above_Lstar,matches_reference,consistent_with_theorem
+decide,mobius,400,11,0.51,,400.0,393.0,7.0,400,reference,,,,,,,True,True
+decide,rp2,300,12,2.98,,300.0,255.0,,300,reference,45.0,,,,,,True,True
+decide,ptorus,200,21,1.18,,200.0,193.0,7.0,200,reference,,,,,,,True,True
+decide,torus,200,22,14.92,,200.0,156.0,,200,reference,44.0,,,,,,True,True
+max,mobius,150,32,3.63,,,148.0,,150,reference,,2745.0,148.0,150.0,0.0,,True,True
+max,ptorus,60,31,4.21,,,59.0,,60,reference,,1285.0,59.0,60.0,0.0,,True,True
+max_closed,rp2,150,41,3.46,,,,,150,reference,,3930.0,150.0,,,3207.0,True,True
+max_closed,torus,60,42,5.03,,,,,60,reference,,2316.0,60.0,,,1923.0,True,True
+decide,mobius,4000,111,4.81,,4000.0,3962.0,38.0,4000,extended,,,,,,,,True
+decide,rp2,3000,112,25.85,,3000.0,2553.0,,3000,extended,447.0,,,,,,,True
+decide,ptorus,2000,121,11.15,,2000.0,1940.0,60.0,2000,extended,,,,,,,,True
+decide,torus,2000,122,74.3,,2000.0,1543.0,,2000,extended,457.0,,,,,,,True
+max,mobius,1500,132,30.54,,,1477.0,,1500,extended,,27512.0,1477.0,1500.0,0.0,,,True
+max,ptorus,600,131,47.76,,,591.0,,600,extended,,13819.0,591.0,600.0,0.0,,,True
+max_closed,rp2,1500,141,36.02,,,,,1500,extended,,39141.0,1500.0,,,33559.0,,True
+max_closed,torus,600,142,51.83,,,,,600,extended,,21086.0,600.0,,,18166.0,,True
