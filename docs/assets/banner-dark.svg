@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="236" viewBox="0 0 960 236" role="img" aria-labelledby="title desc">
+<title id="title">A box, the function f_U and the image barcode</title>
+<desc id="desc">A box on a path with 60 vertices, drawn as vertical intervals; the function f_U computed from it by subbarcode.reconstruct_erosion; and, on the same value axis, the degree-0 barcode of f_U, which equals the image barcode of the box (6 bars, one of them infinite).</desc>
+<rect x=".5" y=".5" width="959" height="235" rx="14" fill="#151b23" stroke="#3d444d"/>
+<line x1="30" x2="932" y1="170" y2="170" stroke="#1b2129"/>
+<line x1="30" x2="932" y1="136" y2="136" stroke="#1b2129"/>
+<line x1="30" x2="932" y1="102" y2="102" stroke="#1b2129"/>
+<line x1="30" x2="932" y1="68" y2="68" stroke="#1b2129"/>
+<rect x="41" y="64.27" width="6" height="43.12" rx="3" fill="#2b323c"/>
+<rect x="52.86" y="87.64" width="6" height="29.19" rx="3" fill="#2b323c"/>
+<rect x="64.73" y="101.34" width="6" height="17.51" rx="3" fill="#2b323c"/>
+<rect x="76.59" y="96.16" width="6" height="16.03" rx="3" fill="#2b323c"/>
+<rect x="88.46" y="106.01" width="6" height="36.88" rx="3" fill="#2b323c"/>
+<rect x="100.32" y="95.61" width="6" height="13.67" rx="3" fill="#2b323c"/>
+<rect x="112.19" y="115.25" width="6" height="33.9" rx="3" fill="#2b323c"/>
+<rect x="124.05" y="121.65" width="6" height="24.71" rx="3" fill="#2b323c"/>
+<rect x="135.92" y="128.46" width="6" height="12.94" rx="3" fill="#2b323c"/>
+<rect x="147.78" y="137.71" width="6" height="14.66" rx="3" fill="#2b323c"/>
+<rect x="159.64" y="147.74" width="6" height="22.61" rx="3" fill="#2b323c"/>
+<rect x="171.51" y="116.82" width="6" height="14.99" rx="3" fill="#2b323c"/>
+<rect x="183.37" y="112.03" width="6" height="31.37" rx="3" fill="#2b323c"/>
+<rect x="195.24" y="115.86" width="6" height="34.15" rx="3" fill="#2b323c"/>
+<rect x="207.1" y="95.46" width="6" height="50.11" rx="3" fill="#2b323c"/>
+<rect x="218.97" y="113.86" width="6" height="44.35" rx="3" fill="#2b323c"/>
+<rect x="230.83" y="118.96" width="6" height="28.16" rx="3" fill="#2b323c"/>
+<rect x="242.69" y="146.68" width="6" height="30.21" rx="3" fill="#2b323c"/>
+<rect x="254.56" y="130.44" width="6" height="32.72" rx="3" fill="#2b323c"/>
+<rect x="266.42" y="163.06" width="6" height="13.39" rx="3" fill="#2b323c"/>
+<rect x="278.29" y="128.47" width="6" height="13.16" rx="3" fill="#2b323c"/>
+<rect x="290.15" y="120.13" width="6" height="43.89" rx="3" fill="#2b323c"/>
+<rect x="302.02" y="114.16" width="6" height="40.08" rx="3" fill="#2b323c"/>
+<rect x="313.88" y="155.24" width="6" height="20.76" rx="3" fill="#2b323c"/>
+<rect x="325.75" y="183.74" width="6" height="14.9" rx="3" fill="#2b323c"/>
+<rect x="337.61" y="183.16" width="6" height="13.2" rx="3" fill="#2b323c"/>
+<rect x="349.47" y="157.27" width="6" height="35.87" rx="3" fill="#2b323c"/>
+<rect x="361.34" y="131.26" width="6" height="16.71" rx="3" fill="#2b323c"/>
+<rect x="373.2" y="122.94" width="6" height="27.71" rx="3" fill="#2b323c"/>
+<rect x="385.07" y="101.49" width="6" height="19.26" rx="3" fill="#2b323c"/>
+<rect x="396.93" y="111.76" width="6" height="20.49" rx="3" fill="#2b323c"/>
+<rect x="408.8" y="102.32" width="6" height="20.13" rx="3" fill="#2b323c"/>
+<rect x="420.66" y="100.55" width="6" height="16.31" rx="3" fill="#2b323c"/>
+<rect x="432.53" y="76.86" width="6" height="27.75" rx="3" fill="#2b323c"/>
+<rect x="444.39" y="91.51" width="6" height="23.72" rx="3" fill="#2b323c"/>
+<rect x="456.25" y="82.86" width="6" height="13.7" rx="3" fill="#2b323c"/>
+<rect x="468.12" y="39.37" width="6" height="35.17" rx="3" fill="#2b323c"/>
+<rect x="479.98" y="55.66" width="6" height="39.3" rx="3" fill="#2b323c"/>
+<rect x="491.85" y="53.96" width="6" height="24.17" rx="3" fill="#2b323c"/>
+<rect x="503.71" y="72.57" width="6" height="32.47" rx="3" fill="#2b323c"/>
+<rect x="515.58" y="75.25" width="6" height="31.57" rx="3" fill="#2b323c"/>
+<rect x="527.44" y="79.68" width="6" height="27.1" rx="3" fill="#2b323c"/>
+<rect x="539.31" y="89.08" width="6" height="16.05" rx="3" fill="#2b323c"/>
+<rect x="551.17" y="115.28" width="6" height="19.07" rx="3" fill="#2b323c"/>
+<rect x="563.03" y="122.5" width="6" height="17.75" rx="3" fill="#2b323c"/>
+<rect x="574.9" y="83.16" width="6" height="18.28" rx="3" fill="#2b323c"/>
+<rect x="586.76" y="68.01" width="6" height="20.22" rx="3" fill="#2b323c"/>
+<rect x="598.63" y="98.68" width="6" height="17.24" rx="3" fill="#2b323c"/>
+<rect x="610.49" y="97.73" width="6" height="13.1" rx="3" fill="#2b323c"/>
+<rect x="622.36" y="105.11" width="6" height="15.92" rx="3" fill="#2b323c"/>
+<rect x="634.22" y="122.42" width="6" height="29.93" rx="3" fill="#2b323c"/>
+<rect x="646.08" y="128.15" width="6" height="18.28" rx="3" fill="#2b323c"/>
+<rect x="657.95" y="82.58" width="6" height="35.34" rx="3" fill="#2b323c"/>
+<rect x="669.81" y="65.38" width="6" height="43.89" rx="3" fill="#2b323c"/>
+<rect x="681.68" y="99.86" width="6" height="18.58" rx="3" fill="#2b323c"/>
+<rect x="693.54" y="96.24" width="6" height="19.37" rx="3" fill="#2b323c"/>
+<rect x="705.41" y="119.74" width="6" height="15.06" rx="3" fill="#2b323c"/>
+<rect x="717.27" y="140.02" width="6" height="13.47" rx="3" fill="#2b323c"/>
+<rect x="729.14" y="151.37" width="6" height="24.56" rx="3" fill="#2b323c"/>
+<rect x="741" y="122.4" width="6" height="42.43" rx="3" fill="#2b323c"/>
+<polyline points="44,107.39 55.86,109.29 67.73,109.29 79.59,109.29 91.46,109.29 103.32,109.29 115.19,141.4 127.05,141.4 138.92,141.4 150.78,147.74 162.64,147.74 174.51,131.81 186.37,143.4 198.24,145.57 210.1,145.57 221.97,147.12 233.83,147.12 245.69,163.06 257.56,163.06 269.42,163.06 281.29,141.63 293.15,154.24 305.02,154.24 316.88,176 328.75,183.74 340.61,183.74 352.47,183.74 364.34,147.97 376.2,147.97 388.07,120.76 399.93,120.76 411.8,120.76 423.66,116.85 435.53,104.61 447.39,104.61 459.25,96.56 471.12,74.53 482.98,78.13 494.85,78.13 506.71,105.04 518.58,105.14 530.44,105.14 542.31,105.14 554.17,122.5 566.03,122.5 577.9,101.44 589.76,88.23 601.63,110.84 613.49,110.84 625.36,121.04 637.22,128.15 649.08,128.15 660.95,117.91 672.81,109.27 684.68,115.6 696.54,115.6 708.41,134.8 720.27,151.37 732.14,151.37 744,151.37" fill="none" stroke="#4493f8" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="44" cy="107.39" r="2.6" fill="#4493f8"/>
+<circle cx="55.86" cy="109.29" r="2.6" fill="#4493f8"/>
+<circle cx="67.73" cy="109.29" r="2.6" fill="#4493f8"/>
+<circle cx="79.59" cy="109.29" r="2.6" fill="#4493f8"/>
+<circle cx="91.46" cy="109.29" r="2.6" fill="#4493f8"/>
+<circle cx="103.32" cy="109.29" r="2.6" fill="#4493f8"/>
+<circle cx="115.19" cy="141.4" r="2.6" fill="#4493f8"/>
+<circle cx="127.05" cy="141.4" r="2.6" fill="#4493f8"/>
+<circle cx="138.92" cy="141.4" r="2.6" fill="#4493f8"/>
+<circle cx="150.78" cy="147.74" r="2.6" fill="#4493f8"/>
+<circle cx="162.64" cy="147.74" r="2.6" fill="#4493f8"/>
+<circle cx="174.51" cy="131.81" r="2.6" fill="#4493f8"/>
+<circle cx="186.37" cy="143.4" r="2.6" fill="#4493f8"/>
+<circle cx="198.24" cy="145.57" r="2.6" fill="#4493f8"/>
+<circle cx="210.1" cy="145.57" r="2.6" fill="#4493f8"/>
+<circle cx="221.97" cy="147.12" r="2.6" fill="#4493f8"/>
+<circle cx="233.83" cy="147.12" r="2.6" fill="#4493f8"/>
+<circle cx="245.69" cy="163.06" r="2.6" fill="#4493f8"/>
+<circle cx="257.56" cy="163.06" r="2.6" fill="#4493f8"/>
+<circle cx="269.42" cy="163.06" r="2.6" fill="#4493f8"/>
+<circle cx="281.29" cy="141.63" r="2.6" fill="#4493f8"/>
+<circle cx="293.15" cy="154.24" r="2.6" fill="#4493f8"/>
+<circle cx="305.02" cy="154.24" r="2.6" fill="#4493f8"/>
+<circle cx="316.88" cy="176" r="2.6" fill="#4493f8"/>
+<circle cx="328.75" cy="183.74" r="2.6" fill="#4493f8"/>
+<circle cx="340.61" cy="183.74" r="2.6" fill="#4493f8"/>
+<circle cx="352.47" cy="183.74" r="2.6" fill="#4493f8"/>
+<circle cx="364.34" cy="147.97" r="2.6" fill="#4493f8"/>
+<circle cx="376.2" cy="147.97" r="2.6" fill="#4493f8"/>
+<circle cx="388.07" cy="120.76" r="2.6" fill="#4493f8"/>
+<circle cx="399.93" cy="120.76" r="2.6" fill="#4493f8"/>
+<circle cx="411.8" cy="120.76" r="2.6" fill="#4493f8"/>
+<circle cx="423.66" cy="116.85" r="2.6" fill="#4493f8"/>
+<circle cx="435.53" cy="104.61" r="2.6" fill="#4493f8"/>
+<circle cx="447.39" cy="104.61" r="2.6" fill="#4493f8"/>
+<circle cx="459.25" cy="96.56" r="2.6" fill="#4493f8"/>
+<circle cx="471.12" cy="74.53" r="2.6" fill="#4493f8"/>
+<circle cx="482.98" cy="78.13" r="2.6" fill="#4493f8"/>
+<circle cx="494.85" cy="78.13" r="2.6" fill="#4493f8"/>
+<circle cx="506.71" cy="105.04" r="2.6" fill="#4493f8"/>
+<circle cx="518.58" cy="105.14" r="2.6" fill="#4493f8"/>
+<circle cx="530.44" cy="105.14" r="2.6" fill="#4493f8"/>
+<circle cx="542.31" cy="105.14" r="2.6" fill="#4493f8"/>
+<circle cx="554.17" cy="122.5" r="2.6" fill="#4493f8"/>
+<circle cx="566.03" cy="122.5" r="2.6" fill="#4493f8"/>
+<circle cx="577.9" cy="101.44" r="2.6" fill="#4493f8"/>
+<circle cx="589.76" cy="88.23" r="2.6" fill="#4493f8"/>
+<circle cx="601.63" cy="110.84" r="2.6" fill="#4493f8"/>
+<circle cx="613.49" cy="110.84" r="2.6" fill="#4493f8"/>
+<circle cx="625.36" cy="121.04" r="2.6" fill="#4493f8"/>
+<circle cx="637.22" cy="128.15" r="2.6" fill="#4493f8"/>
+<circle cx="649.08" cy="128.15" r="2.6" fill="#4493f8"/>
+<circle cx="660.95" cy="117.91" r="2.6" fill="#4493f8"/>
+<circle cx="672.81" cy="109.27" r="2.6" fill="#4493f8"/>
+<circle cx="684.68" cy="115.6" r="2.6" fill="#4493f8"/>
+<circle cx="696.54" cy="115.6" r="2.6" fill="#4493f8"/>
+<circle cx="708.41" cy="134.8" r="2.6" fill="#4493f8"/>
+<circle cx="720.27" cy="151.37" r="2.6" fill="#4493f8"/>
+<circle cx="732.14" cy="151.37" r="2.6" fill="#4493f8"/>
+<circle cx="744" cy="151.37" r="2.6" fill="#4493f8"/>
+<line x1="768" x2="768" y1="28" y2="208" stroke="#3d444d"/>
+<line x1="792" x2="792" y1="183.74" y2="32" stroke="#4493f8" stroke-width="5"/>
+<path d="M787 33h10l-5-8z" fill="#4493f8"/>
+<line x1="808" x2="808" y1="163.06" y2="141.63" stroke="#4493f8" stroke-width="5"/>
+<line x1="824" x2="824" y1="151.37" y2="74.53" stroke="#4493f8" stroke-width="5"/>
+<line x1="840" x2="840" y1="147.74" y2="131.81" stroke="#4493f8" stroke-width="5"/>
+<line x1="856" x2="856" y1="128.15" y2="109.27" stroke="#4493f8" stroke-width="5"/>
+<line x1="872" x2="872" y1="122.5" y2="88.23" stroke="#4493f8" stroke-width="5"/>
+<text x="210.1" y="86.46" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#9198a1" text-anchor="middle">box <tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75">[</tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75" font-style="italic">ℓ</tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75">, </tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75" font-style="italic">u</tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75">]</tspan></text>
+<text x="782" y="226" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="12.5" fill="#9198a1" text-anchor="start"><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75">Bar</tspan><tspan dy="3.75" font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="9.9">0</tspan><tspan dy="-3.75" font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75">(</tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75" font-style="italic">u</tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75"> ≥ </tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75" font-style="italic">ℓ</tspan><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="13.75">)</tspan></text>
+<text x="162.64" y="171.74" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif" font-size="14" fill="#4493f8" text-anchor="start"><tspan font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="15.4" font-style="italic">f</tspan><tspan dy="4.2" font-family="'STIX Two Text','Cambria Math',Cambria,'Latin Modern Roman','Times New Roman',Times,serif" font-size="11.09" font-style="italic">U</tspan></text>
+</svg>
