@@ -1,0 +1,7 @@
+method,status,instances
+exhaustive enumeration,NOT attained,607
+exhaustive enumeration,attained,502
+one-free-vertex sweep,NOT attained,105
+one-free-vertex sweep,attained,95
+verified witness f_D,attained,5437
+verified witness f_U,attained,54
