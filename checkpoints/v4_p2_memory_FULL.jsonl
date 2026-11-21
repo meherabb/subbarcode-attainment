@@ -1,0 +1,9 @@
+{"_key": "10000", "rows": [{"n": 10000, "gather_random_ns": 1.318737950009563, "gather_sequential_ns": 1.3268423499994242}]}
+{"_key": "30000", "rows": [{"n": 30000, "gather_random_ns": 1.3059409409377165, "gather_sequential_ns": 1.3305768768967008}]}
+{"_key": "100000", "rows": [{"n": 100000, "gather_random_ns": 1.338576800003466, "gather_sequential_ns": 1.3479114000119807}]}
+{"_key": "300000", "rows": [{"n": 300000, "gather_random_ns": 2.132855909098218, "gather_sequential_ns": 1.3336524747354255}]}
+{"_key": "1000000", "rows": [{"n": 1000000, "gather_random_ns": 2.6699005499949635, "gather_sequential_ns": 1.288609950006503}]}
+{"_key": "3000000", "rows": [{"n": 3000000, "gather_random_ns": 7.811009777772901, "gather_sequential_ns": 1.4724142777645788}]}
+{"_key": "10000000", "rows": [{"n": 10000000, "gather_random_ns": 9.179645500012157, "gather_sequential_ns": 1.536387700002706}]}
+{"_key": "20000000", "rows": [{"n": 20000000, "gather_random_ns": 10.349145450004471, "gather_sequential_ns": 1.5927986999940913}]}
+{"_key": "50000000", "rows": [{"n": 50000000, "gather_random_ns": 11.29533616000117, "gather_sequential_ns": 1.670010360003289}]}
