@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.zip binary
+
+# The archived run is kept byte for byte (results/SHA256SUMS): no line-ending conversion, and it is
+# generated output, so it is collapsed in diffs and left out of the language statistics.
+results/** -text linguist-generated=true
+docs/claims.md linguist-generated=true
+docs/assets/** linguist-generated=true

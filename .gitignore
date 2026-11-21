@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# new runs and rebuilt figures (the reported run lives in results/)
+runs/
+build/
+
+# editors and systems
+.DS_Store
+.idea/
+.vscode/
